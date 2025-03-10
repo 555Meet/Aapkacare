@@ -4,6 +4,8 @@ import MainTop from '../../component1/main-top';
 import ReasonCard from '../../component1/ReasonCard';
 import Check from '../../component1/check';
 import BestSurgary from '../../component1/best-surgary';
+import ReactUs from '../../component1/react-us';
+import LastImages from '../../component1/last-images';
 
 const RotatorCuffRepair = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -228,6 +230,8 @@ const RotatorCuffRepair = () => {
                     </div>
                 ))}
             </div>
+            <ReactUs/>
+            <LastImages/>
         </>
     );
 }
