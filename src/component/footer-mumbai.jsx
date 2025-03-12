@@ -1,75 +1,78 @@
-// src/Services.js
+import React from "react";
+import { Link } from "react-router-dom";
 
-import React from 'react';
-
-const services1 = [
+const services = [
   {
     title: "Ophthalmology",
     items: [
-      "Best Cataract Services in Mumbai",
-      "Best Lasik Surgery Services in Mumbai"
-    ]
+      { name: "Best Cataract Services in Mumbai", path: "/ophthalmology/cataract" },
+      { name: "Best Lasik Surgery Services in Mumbai", path: "/ophthalmology/lasik" },
+    ],
   },
   {
     title: "Laparoscopy",
     items: [
-      "Best Hernia Services in Mumbai",
-      "Best Appendicitis Services in Mumbai",
-      "Best Gallbladder stone Services in Mumbai"
-    ]
+      { name: "Best Hernia Services in Mumbai", path: "/laparoscopy/hernia" },
+      { name: "Best Appendicitis Services in Mumbai", path: "/laparoscopy/appendicitis" },
+      { name: "Best Gallbladder Stone Services in Mumbai", path: "/laparoscopy/gallbladder-stone" },
+    ],
   },
   {
     title: "Urology",
     items: [
-      "Best Circumcision Services in Mumbai",
-      "Best Kidney Stone Services in Mumbai",
-      "Best Hydrocele Services in Mumbai",
-      "Best Frenuloplasty Services in Mumbai",
-      "Best Kidney Transplant Services in Mumbai",
-      "Best Prostate enlargement Services in Mumbai"
-    ]
+      { name: "Best Circumcision Services in Mumbai", path: "/urology/circumcision" },
+      { name: "Best Kidney Stone Services in Mumbai", path: "/urology/kidney-stone" },
+      { name: "Best Hydrocele Services in Mumbai", path: "/urology/hydrocele" },
+      { name: "Best Frenuloplasty Services in Mumbai", path: "/urology/frenuloplasty" },
+      { name: "Best Kidney Transplant Services in Mumbai", path: "/urology/kidney-transplant" },
+      { name: "Best Prostate Enlargement Services in Mumbai", path: "/urology/prostate-enlargement" },
+    ],
   },
   {
-    title: "Best Cosmetic",
+    title: "Cosmetic",
     items: [
-      "Best Gynecomastia Services in Mumbai",
-      "Best Lipoma Services in Mumbai",
-      "Best Mole Removal Services in Mumbai"
-    ]
+      { name: "Best Gynecomastia Services in Mumbai", path: "/cosmetic/gynecomastia" },
+      { name: "Best Lipoma Services in Mumbai", path: "/cosmetic/lipoma" },
+      { name: "Best Mole Removal Services in Mumbai", path: "/cosmetic/mole-removal" },
+    ],
   },
   {
     title: "Orthopaedic",
     items: [
-      "Best Hip replacement Services in Mumbai",
-      "Best Knee replacement Services in Mumbai",
-      "Best ACL tear Services in Mumbai",
-      "Best Disc injury Services in Mumbai",
-      "Best Joint replacement Services in Mumbai",
-      "Best Knee Arthroscopy Services in Mumbai",
-      "Best Rotator cuff repair Services in Mumbai"
-    ]
+      { name: "Best Hip Replacement Services in Mumbai", path: "/orthopaedic/hip-replacement" },
+      { name: "Best Knee Replacement Services in Mumbai", path: "/orthopaedic/knee-replacement" },
+      { name: "Best ACL Tear Services in Mumbai", path: "/orthopaedic/acl-tear" },
+      { name: "Best Disc Injury Services in Mumbai", path: "/orthopaedic/disc-injury" },
+      { name: "Best Joint Replacement Services in Mumbai", path: "/orthopaedic/join-replacement" },
+      { name: "Best Knee Arthroscopy Services in Mumbai", path: "/orthopaedic/knee-arthroscopy" },
+      { name: "Best Rotator Cuff Repair Services in Mumbai", path: "/orthopaedic/rotator-cuff-repair" },
+    ],
   },
   {
     title: "Proctology",
     items: [
-      "Best Piles Services in Mumbai",
-      "Best Fissure Services in Mumbai",
-      "Best Fistula Services in Mumbai"
-    ]
-  }
+      { name: "Best Piles Services in Mumbai", path: "/proctology/piles" },
+      { name: "Best Fissure Services in Mumbai", path: "/proctology/fissure" },
+      { name: "Best Fistula Services in Mumbai", path: "/proctology/fistula" },
+    ],
+  },
 ];
 
 const FooterMumbai = () => {
   return (
     <div className="bg-gray-800 p-8 text-white">
-      <h1 className="text-4xl font-bold text-left ml-7 mb-8">Aapka Care Services In Mumbai</h1>
+      <h1 className="text-4xl font-bold text-left ml-7 mb-8">Aapka Care Services In Pune</h1>
       <div className="grid grid-cols-1 md:grid-cols-6">
-        {services1.map((service, index) => (
+        {services.map((service, index) => (
           <div key={index} className="p-6">
             <h2 className="text-2xl font-semibold mb-4">{service.title}</h2>
             <ul className="list-disc pl-5">
               {service.items.map((item, idx) => (
-                <li key={idx} className="mb-2">{item}</li>
+                <li key={idx} className="mb-2">
+                  <Link to={item.path} className="text-white hover:text-blue-300 ">
+                    {item.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>

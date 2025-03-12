@@ -3,12 +3,11 @@ import React from 'react';
 const ReactUs = () => {
     return (
     <>
-        <section className="bg-[#E2F2FD] py-12 px-6">
+    <section className="bg-[#E2F2FD] py-12 px-6">
       <div className="max-w-full mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-900">About our Doctors & Hospitals</h2>
         <p className="mt-4 text-gray-700">
-          At Aapkacare Health we provide well-experienced and highly qualified doctors to
-          give you the most accurate diagnosis and health care advice.
+          At Aapkacare Health we provide well-experienced and highly qualified doctors to give you the most accurate diagnosis and health care advice.
         </p>
       </div>
 

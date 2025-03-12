@@ -26,6 +26,14 @@ import DiscInjury from './pages/orthopaedic/Disc-injury';
 import JoinReplacement from './pages/orthopaedic/Join-replacement';
 import KneeArthroscopy from './pages/orthopaedic/knee-Arthroscopy';
 import RotatorCuffRepair from './pages/orthopaedic/Rotator-cuff-repair';
+import Piles from './pages/proctology/piles';
+import Fissure from './pages/proctology/fissure';
+import Fistula from './pages/proctology/Fistula';
+import Varicocele from './pages/vascular/varicocele';
+import VaricoseVein from './pages/vascular/varicose-Vein';
+import Bariatric from './pages/Bariatric/Bariatric';
+import HospitalSearch from './pages/hospitalSearch';
+import DocterSearch from './pages/docterSearch';
 
 
 function App() {
@@ -56,6 +64,14 @@ function App() {
                 <Route path="/orthopaedic/join-replacement" element={<JoinReplacement/>} />
                 <Route path="/orthopaedic/knee-arthroscopy" element={<KneeArthroscopy/>} />
                 <Route path="/orthopaedic/Rotator-cuff-repair" element={<RotatorCuffRepair/>} />
+                <Route path="/proctology/piles" element={<Piles/>} />
+                <Route path="/proctology/fissure" element={<Fissure/>} />
+                <Route path="/proctology/Fistula" element={<Fistula/>} />
+                <Route path="/vascular/varicocele" element={<Varicocele/>} />
+                <Route path="/vascular/varicose-Vein" element={<VaricoseVein/>} />
+                <Route path="/Bariatric" element={<Bariatric/>} />
+                <Route path="/pages/hospitalSearch" element={<HospitalSearch/>} />
+                <Route path="/pages/docterSearch" element={<DocterSearch/>} />
             </Routes>
             <FooterPune />
             <Footer />
