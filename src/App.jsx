@@ -34,6 +34,7 @@ import VaricoseVein from './pages/vascular/varicose-Vein';
 import Bariatric from './pages/Bariatric/Bariatric';
 import HospitalSearch from './pages/hospitalSearch';
 import DocterSearch from './pages/docterSearch';
+import HospitalDetails from './pages/HospitalDetails';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/hospital-details/:id" element={<HospitalDetails />} />
                 <Route path="/ophthalmology/cataract" element={<Cataract/>} />
                 <Route path="/ophthalmology/Lasik" element={<LasikSurgery/>} />
                 <Route path="/laparoscopy/hernia" element={<Hernia/>} />
