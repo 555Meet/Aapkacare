@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import Link and useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import { FaHospital, FaUserMd, FaBars, FaTimes, FaPhone } from "react-icons/fa";
 
 const Header = () => {
@@ -16,8 +16,20 @@ const Header = () => {
   ];
 
   const menuItems = [
-    { name: "Hospital", icon: <FaHospital className="text-blue-500" />, path: "/hospital-search" },
-    { name: "Doctors", icon: <FaUserMd className="text-blue-500" />, path: "/doctor-search" }
+    { name: "Hospital", icon: <FaHospital className="text-blue-500" />, path: "../pages/HospitalSearch" },
+    { name: "Doctors", icon: <FaUserMd className="text-blue-500" />, path: "../pages/HospitalSearch" }
+  ];
+
+  const expandableItems = [
+    { name: "Ophthalmology", subLinks: [{ name: "Cataract", path: "/ophthalmology/cataract" }, { name: "Lasik Surgery", path: "/ophthalmology/lasik" }] },
+    { name: "Laparoscopy", subLinks: [{ name: "Hernia", path: "/laparoscopy/hernia" }, { name: "Appendicitis", path: "/laparoscopy/appendicitis" }, { name: "Gallbladder stone", path: "/laparoscopy/gallbladder-stone" }] },
+    { name: "Urology", subLinks: [{ name: "Circumcision", path: "/urology/circumcision" }, { name: "Kidney Stone", path: "/urology/kidney-stone" },{ name: "Hydrocele", path: "/urology/Hydrocele" },{ name: "Frenuloplasty", path: "/urology/Frenuloplasty" },{ name: "Kidney Transplant", path: "/urology/Kidney-Transplant" },{ name: "Prostate enlargement", path: "/urology/Prostate-enlargement" }] },
+    { name: "Cosmetic", subLinks: [{ name: "Gynecomastia", path: "/cosmetic/gynecomastia" }, { name: "Lipoma", path: "/cosmetic/lipoma" },{ name: "Mole Removal", path: "/cosmetic/Mole-Removal" }] },
+    { name: "Orthopaedic", subLinks: [{ name: "Hip Replacement", path: "/orthopaedic/hip-replacement" }, { name: "Knee Replacement", path: "/orthopaedic/knee-replacement" },{ name: "ACL tear", path: "/orthopaedic/ACL-tear" },{ name: "Disc injury", path: "/orthopaedic/Disc-injury" },{ name: "Joint Replacement", path: "/orthopaedic/Join-replacement" },{ name: "Knee Arthroscopy", path: "/orthopaedic/knee-Arthroscopy" },{ name: "Rotator cuff repair", path: "/orthopaedic/Rotator-cuff-repair" }] },
+    { name: "Proctology", subLinks: [{ name: "Piles", path: "/proctology/piles" }, { name: "Fissure", path: "/proctology/fissure" },{ name: "Fistula", path: "/proctology/Fistula" }] },
+    { name: "Vascular", subLinks: [{ name: "Varicocele", path: "/vascular/varicocele" },{ name: "Varicose Vein", path: "/vascular/varicose-Vein" }] },
+    { name: "Bariatric", subLinks: [{ name: "Bariatric", path: "/Bariatric" }] },
+    { name: "Blog", subLinks: [{ name: "Hindi", path: "/Blog/Hindi" },{name: "English", path: "/Blog/English"}]},
   ];
 
   const toggleSubMenu = (name) => {
@@ -58,6 +70,35 @@ const Header = () => {
               >
                 {item.icon}
                 <span>{item.name}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Expandable Menu Items */}
+          <div className="px-5 space-y-2">
+            {expandableItems.map((item, index) => (
+              <div key={index}>
+                <div
+                  className="flex justify-between items-center text-lg p-2 cursor-pointer border-b"
+                  onClick={() => toggleSubMenu(item.name)}
+                >
+                  <span>{item.name}</span>
+                  <span>{openMenu === item.name ? "▲" : "▼"}</span>
+                </div>
+                {openMenu === item.name && (
+                  <div className="pl-5 space-y-1 text-gray-600">
+                    {item.subLinks.map((subItem, subIndex) => (
+                      <Link
+                        key={subIndex}
+                        to={subItem.path}
+                        className="block p-2 hover:bg-gray-200"
+                        onClick={hideSideMenu}
+                      >
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
