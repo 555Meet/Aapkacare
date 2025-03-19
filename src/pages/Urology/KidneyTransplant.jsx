@@ -193,7 +193,7 @@ const KidneyTransplant = () => {
             </div>
 
             <div className='container max-w-full'>
-                    <div class="bg-blue-100 w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
+                    <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
                         <div>
                         <h1 class="text-2xl font-bold mb-4">Benefits of Kidney Transplant </h1>
                         <p class="text-md mb-4">A kidney transplant is generally the best treatment for kidney failure in a patient who fits the transplantation procedure. A successful kidney transplant procedure provides several benefits such as: </p>
@@ -232,7 +232,7 @@ const KidneyTransplant = () => {
                         </div>
                     </div>
 
-                    <div class="bg-blue-100 w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
+                    <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
                         <div className='flex flex-col flex-1/2'>
                         <h1 class="text-2xl font-bold mb-4">When is consultation with the doctor needed? </h1>
                         <p class="text-md mb-4">The patient can visit the doctor if he/she is facing any kind of discomfort, such as: 

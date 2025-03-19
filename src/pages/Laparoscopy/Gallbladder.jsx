@@ -63,7 +63,7 @@ const Gallbladder = () => {
             </div>
 
                 <div className='container max-w-full'>
-                    <div class="bg-blue-100 w-full flex flex-col md:flex-row items-center md:px-20 px-5 gap-3">
+                    <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-20 px-5 gap-3">
                         <div>
                         <h1 class="text-2xl font-bold mb-4">Surgery (Cholecystectomy)</h1>
                         <p class="text-md mb-4">If Gallstone is causing symptoms or complications, the most common treatment is the surgical removal of the gallbladder, known as cholecystectomy. This procedure can be performed using minimally invasive laparoscopic techniques or open surgery, depending on the patient’s condition. Treatment choice depends on the specific circumstances, including the size and location of the stone, the severity of symptoms, and the patient’s overall health. It’s essential to consult with a healthcare provider for a proper evaluation and individualized treatment plan if you suspect you have gallbladder stones or are experiencing symptoms. Left untreated, gallstones can lead to potentially serious complications.
@@ -81,7 +81,7 @@ const Gallbladder = () => {
                         </div>
                     </div>
 
-                    <div class="bg-blue-100 w-full flex flex-col md:flex-row items-center md:px-20 px-5 gap-3">
+                    <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-20 px-5 gap-3">
                         <div>
                         <h1 class="text-2xl font-bold mb-4">Surgery Cholecystectomy</h1>
                         <p class="text-md mb-4">If Gallstone is causing symptoms or complications, the most common treatment is the surgical removal of the gallbladder, known as cholecystectomy. This procedure can be performed using minimally invasive laparoscopic techniques or open surgery, depending on the patient’s condition. Treatment choice depends on the specific circumstances, including the size and location of the stone, the severity of symptoms, and the patient’s overall health. It’s essential to consult with a healthcare provider for a proper evaluation and individualized treatment plan if you suspect you have gallbladder stones or are experiencing symptoms. Left untreated, gallstones can lead to potentially serious complications.
@@ -98,7 +98,7 @@ const Gallbladder = () => {
                         <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2" height="200" src="/images/laparoscopy/Gallbladder1-4.png"/>
                     </div>
 
-                    <div class="bg-blue-100 w-full flex flex-col md:flex-row items-center md:px-20 px-5 gap-3">
+                    <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-20 px-5 gap-3">
                         <img alt="Surgeons" class="rounded-lg w-[500px]" height="300" src="/images/laparoscopy/Gallbladder1-2.png"/>
                         <div className='md:pr-10 pr-0 md:my-10 my-0'>
                             <h1 class="text-2xl font-bold mb-4">Prevention of Gallbladder Stones </h1>

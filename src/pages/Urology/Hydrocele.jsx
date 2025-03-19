@@ -133,8 +133,8 @@ const Hydrocele = () => {
             </div>
             </div>
 
-            <div className="bg-blue-100">
-                <div className="max-w-full mx-auto p-6 bg-blue-100 flex flex-col md:flex-row items-center">
+            <div className="bg-[#E4F4FD]">
+                <div className="max-w-full mx-auto p-6 bg-[#E4F4FD] flex flex-col md:flex-row items-center">
                     {/* Left Image Section */}
                     <div className="w-full md:pl-30 pl-0 md:w-1/2">
                         <img alt="A female doctor in a white coat holding a clipboard and smiling"height="400"src="https://storage.googleapis.com/a1aa/image/vKxrjoV05YQbK2x7eC8iuVF-iU-cPKH8TYa38LVdtFg.jpg"width="400"/>
@@ -171,7 +171,7 @@ const Hydrocele = () => {
                 <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[700px] md:p-6 p-2 h-[500px]" src="/images/circumcision/u-h.png"/>
             </div>
 
-            <div class="bg-blue-100 w-full flex flex-col md:flex-row items-center md:px-40 px-5 gap-3">
+            <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-40 px-5 gap-3">
                 <div>
                     <h1 class="text-2xl font-bold mb-4">Procedure </h1>
                     <p class="text-md mb-4">Open hydrocelectomy: This is a surgical procedure that is usually performed under the influence of general anesthesia. During this procedure, the surgeon makes a cut in the scrotum or groin area and drains out the fluid via suction. The surgeon then closes the communication to the canal between the abdominal cavity and the scrotum, before removing the hydrocele sac and closing the incisions with sutures or surgical strips 
@@ -190,7 +190,7 @@ const Hydrocele = () => {
                 </ul>
             </div>
 
-            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-blue-100 shadow-lg rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-[#E4F4FD] shadow-lg rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">Lifestyle changes that can help in getting relief from hydroceles </h2>
                 <p className="text-gray-600 mb-4">Aapka Care strives to provide an efficient, care-filled, and hassle-free surgical experience for every patient. Following are the benefits of choosing our clinics and hospitals for the treatment of your hydrocele:</p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">

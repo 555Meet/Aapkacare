@@ -29,7 +29,7 @@ const Header = () => {
     { name: "Proctology", subLinks: [{ name: "Piles", path: "/proctology/piles" }, { name: "Fissure", path: "/proctology/fissure" },{ name: "Fistula", path: "/proctology/Fistula" }] },
     { name: "Vascular", subLinks: [{ name: "Varicocele", path: "/vascular/varicocele" },{ name: "Varicose Vein", path: "/vascular/varicose-Vein" }] },
     { name: "Bariatric", subLinks: [{ name: "Bariatric", path: "/Bariatric" }] },
-    { name: "Blog", subLinks: [{ name: "Hindi", path: "/Blog/Hindi" },{name: "English", path: "/Blog/English"}]},
+    { name: "Blog", subLinks: [{ name: "Blog", path: "/Blog" }]},
   ];
 
   const toggleSubMenu = (name) => {
@@ -52,7 +52,7 @@ const Header = () => {
           }`}
         >
           {/* Sidebar Header */}
-          <div className="bg-blue-500 p-5 text-white flex justify-between items-center">
+          <div className="bg-[#1EB4FD] p-5 text-white flex justify-between items-center">
             <span className="text-xl font-bold">Aapka Care</span>
             <FaTimes className="text-2xl cursor-pointer" onClick={hideSideMenu} />
           </div>

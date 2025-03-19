@@ -1,15 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import for routing
 import "swiper/css";
 import "swiper/css/navigation";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const camps = [
-  { date: "10 Feb, 2024", title: "First Global", image: "images/camp-1.png" },
-  { date: "12 Feb, 2024", title: "Anarock Thane Camp", image: "images/camp-2.png" },
-  { date: "1 Mar, 2024", title: "Dainik Bhaskar Group", image: "images/camp-3.png" },
-  { date: "1 Mar, 2024", title: "Dainik Bhaskar Group", image: "images/camp-4.png" },
+  { id: 1, date: "10 Feb, 2024", title: "First Global", image: "images/camp-1.png" },
+  { id: 2, date: "12 Feb, 2024", title: "Anarock Thane Camp", image: "images/camp-2.png" },
+  { id: 3, date: "1 Mar, 2024", title: "Dainik Bhaskar Group", image: "images/camp-3.png" },
+  { id: 4, date: "1 Mar, 2024", title: "Dainik Bhaskar Group", image: "images/camp-4.png" },
 ];
 
 const CareCamps = () => {
@@ -32,7 +33,7 @@ const CareCamps = () => {
         {/* Title + Navigation Buttons */}
         <div className="flex flex-col md:flex-row my-5 items-center justify-between">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-            Aapka Care Camps 
+            Aapka Care Camps
           </h2>
           <div className="flex mt-4 md:mt-0">
             <button
@@ -54,30 +55,32 @@ const CareCamps = () => {
         <div className="relative">
           <Swiper
             ref={swiperRef}
-            slidesPerView={1} // Default: Show 1 slide on mobile
+            slidesPerView={1} 
             breakpoints={{
-              640: { slidesPerView: 1, spaceBetween: 10 }, // Small screens
-              768: { slidesPerView: 2, spaceBetween: 15 }, // Tablets
-              1024: { slidesPerView: 3, spaceBetween: 20 }, // Desktops
+              640: { slidesPerView: 1, spaceBetween: 10 },
+              768: { slidesPerView: 2, spaceBetween: 15 },
+              1024: { slidesPerView: 3, spaceBetween: 20 },
             }}
             spaceBetween={20}
             navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
             modules={[Navigation]}
             className="w-full"
           >
-            {camps.map((camp, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative w-full rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src={camp.image}
-                    alt={camp.title}
-                    className="w-full h-56 object-cover"
-                  />
-                  <div className="absolute top-0 right-0 bg-gray-900 text-white px-3 py-1 rounded-bl-lg text-sm md:text-lg">
-                    {camp.date} <br />
-                    {camp.title}
+            {camps.map((camp) => (
+              <SwiperSlide key={camp.id}>
+                <Link to={`/camp-details/${camp.id}`} state={{ camp }}>
+                  <div className="relative w-full rounded-lg overflow-hidden shadow-lg cursor-pointer">
+                    <img
+                      src={camp.image}
+                      alt={camp.title}
+                      className="w-full h-56 object-cover"
+                    />
+                    <div className="absolute top-0 right-0 bg-gray-900 text-white px-3 py-1 rounded-bl-lg text-sm md:text-lg">
+                      {camp.date} <br />
+                      {camp.title}
+                    </div>
                   </div>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

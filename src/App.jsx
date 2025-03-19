@@ -35,6 +35,10 @@ import Bariatric from './pages/Bariatric/Bariatric';
 import HospitalSearch from './pages/hospitalSearch';
 import DocterSearch from './pages/docterSearch';
 import HospitalDetails from './pages/HospitalDetails';
+import CampDetails from './pages/camp-details';
+import MemberDetails from './pages/MemberDetails';
+import Blog from './pages/Blog/blog';
+import BlogDetails from './pages/Blog/BlogDetails';
 
 
 function App() {
@@ -44,7 +48,9 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/camp-details/:id" element={<CampDetails />} />
                 <Route path="/hospital-details/:id" element={<HospitalDetails />} />
+                <Route path="/board-member/:id" element={<MemberDetails />} />
                 <Route path="/ophthalmology/cataract" element={<Cataract/>} />
                 <Route path="/ophthalmology/Lasik" element={<LasikSurgery/>} />
                 <Route path="/laparoscopy/hernia" element={<Hernia/>} />
@@ -74,6 +80,8 @@ function App() {
                 <Route path="/Bariatric" element={<Bariatric/>} />
                 <Route path="/pages/hospitalSearch" element={<HospitalSearch/>} />
                 <Route path="/pages/docterSearch" element={<DocterSearch/>} />
+                <Route path="/Blog" element={<Blog/>} />
+                <Route path="/Blog/:id" element={<BlogDetails />} />
             </Routes>
             <FooterPune />
             <Footer />

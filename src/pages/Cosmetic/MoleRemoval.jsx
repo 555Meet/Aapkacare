@@ -179,7 +179,7 @@ const MoleRemoval = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-full mx-auto py-6 md:px-30 px-5 bg-blue-100 rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-30 px-5 bg-[#E4F4FD] rounded-lg">
                 <h1 className="text-center text-3xl font-bold mb-6">What happens when Gynecomastia is left untreated? </h1>
                 <p className="text-center text-xl mb-6 ">Gynecomastia, when left untreated, can result in various physical and psychological consequences. The impact of untreated Gynecomastia can vary depending on the underlying cause, the severity of the condition, and individual factors. Here are some potential implications of leaving Gynecomastia untreated 
                 </p>

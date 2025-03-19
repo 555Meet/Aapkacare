@@ -27,7 +27,7 @@ const HipReplacement = () => {
             </div>
             <div>
                 <Tretment/>
-                <div className='md:px-30 px-10 bg-blue-100'>
+                <div className='md:px-30 px-10 bg-[#E4F4FD]'>
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">Signs and Symptoms </h2>
                 <p classN ame="text-gray-600 mt-2">Before considering hip replacement surgery, it's essential to recognize the signs and symptoms that may indicate a need for the procedure 
                 </p>
@@ -75,7 +75,7 @@ const HipReplacement = () => {
             </div>
 
             <div className="container max-w-full">
-                <div className="bg-blue-100 w-full flex flex-col md:flex-row md:px-32 px-5 gap-3 md:py-10 py-5">
+                <div className="bg-[#E4F4FD] w-full flex flex-col md:flex-row md:px-32 px-5 gap-3 md:py-10 py-5">
                     <div className="w-full md:w-1/2">
                         <h1 className="text-3xl font-bold mb-4 text-center md:text-left">Post-Treatment Care</h1>
                         <p className="text-md mb-4 text-xl">Recovery is a crucial phase in the hip replacement journey. At Aapkacare, we emphasize the importance of post-treatment care, which includes:

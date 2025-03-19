@@ -32,7 +32,7 @@ const Frenuloplasty = () => {
                 </section>
             </div>
 
-            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-blue-100 shadow-lg rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-[#E4F4FD] shadow-lg rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">Diagnosis And Treatment Under Frenuloplasty </h2>
                 <h2 className='text-xl font-bold mb-4'>Diagnosis </h2>
                 <p className="text-gray-600 mb-4">Diagnosis and treatment under Frenuloplasty involve a series of steps to address issues related to a tight or restrictive frenulum in various body parts, such as the tongue, lips, or penis. Here's an overview of the diagnosis and treatment process</p>
@@ -72,7 +72,7 @@ const Frenuloplasty = () => {
                         </div>
                     </div>
 
-            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-blue-100 shadow-lg rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-[#E4F4FD] shadow-lg rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">What are the Benefits of Frenuloplasty? </h2>
                 <p className="text-gray-600 mb-4">Here are some of the benefits associated with different types of frenuloplasty procedures: </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">

@@ -125,8 +125,8 @@ const LasikSurgery = () => {
                     ))}
                 </div>
             </div>
-            <div className="bg-blue-100">
-      <div className="max-w-full mx-auto p-6 bg-blue-100 flex flex-col md:flex-row items-center">
+            <div className="bg-[#E4F4FD]">
+      <div className="max-w-full mx-auto p-6 bg-[#E4F4FD] flex flex-col md:flex-row items-center">
         {/* Left Image Section */}
         <div className="w-full md:pl-30 pl-0 md:w-1/2">
           <img

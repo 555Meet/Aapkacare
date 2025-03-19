@@ -11,7 +11,7 @@ const links = [
   { name: "Proctology", subLinks: [{ name: "Piles", path: "/proctology/piles" }, { name: "Fissure", path: "/proctology/fissure" },{ name: "Fistula", path: "/proctology/Fistula" }] },
   { name: "Vascular", subLinks: [{ name: "Varicocele", path: "/vascular/varicocele" },{ name: "Varicose Vein", path: "/vascular/varicose-Vein" }] },
   { name: "Bariatric", subLinks: [{ name: "Bariatric", path: "/Bariatric" }] },
-  { name: "Blog", subLinks: [{ name: "Hindi", path: "/Blog/Hindi" },{name: "English", path: "/Blog/English"}]},
+  { name: "Blog", subLinks: [{name: "Blog", path: "/Blog"}]},
 ];
 
 const Navbar = () => {
@@ -36,7 +36,8 @@ const Navbar = () => {
                       <Link
                         key={subIndex}
                         to={subItem.path}
-                        className="block px-4 py-2 text-gray-700 hover:bg-blue-400 hover:text-[white] rounded-md"
+                          className="block px-4 py-2 text-gray-700 hover:bg-blue-400 hover:text-[white] rounded-md"
+                          onClick={() => setOpenDropdown(null)} // Close dropdown on click
                       >
                         {subItem.name}
                       </Link>
