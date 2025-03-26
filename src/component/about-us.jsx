@@ -22,7 +22,7 @@ const Testimonials = () => {
         </div>
         <div className="md:w-1/3 mt-8 md:mt-0">
           <div className="relative">
-            <video className="w-full md:w-[300px] h-auto rounded-lg" controls loop poster="https://via.placeholder.com/800x450">
+            <video className="w-full md:w-[300px] h-auto rounded-lg" controls loop>
               <source src="images/review.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -34,7 +34,7 @@ const Testimonials = () => {
       <div className="flex flex-col md:flex-row items-center md:gap-10 mt-10">
         <div className="md:w-1/3 mt-8 md:mt-0">
           <div className="relative">
-            <video className="w-full md:w-[300px] h-auto rounded-lg" controls loop poster="https://via.placeholder.com/800x450">
+            <video className="w-full md:w-[300px] h-auto rounded-lg" controls loop>
               <source src="images/review1.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>

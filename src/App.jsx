@@ -39,6 +39,8 @@ import CampDetails from './pages/camp-details';
 import MemberDetails from './pages/MemberDetails';
 import Blog from './pages/Blog/blog';
 import BlogDetails from './pages/Blog/BlogDetails';
+import DoctorList from './pages/DoctorList';
+import DoctorDetails from './component/DoctorDetails';
 
 
 function App() {
@@ -82,6 +84,8 @@ function App() {
                 <Route path="/pages/docterSearch" element={<DocterSearch/>} />
                 <Route path="/Blog" element={<Blog/>} />
                 <Route path="/Blog/:id" element={<BlogDetails />} />
+                <Route path='/doctor' element={<DoctorList/>}/>
+                <Route path='/doctor/:id' element={<DoctorDetails/>}/>
             </Routes>
             <FooterPune />
             <Footer />

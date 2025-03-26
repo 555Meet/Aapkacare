@@ -32,7 +32,7 @@ const FAQGynecomastia = () => {
     };
     return (
         <>
-            <div className="w-full max-w-3xl md:mx-14 mx-auto p-4">
+    <div className="w-full max-w-3xl md:mx-14 mx-auto p-4">
       <h2 className="flex justify-center text-3xl mb-6">Identify the signs of Gynecomastia</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="border border-gray-300 rounded-lg mb-2">

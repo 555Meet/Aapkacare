@@ -7,10 +7,51 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const camps = [
-  { id: 1, date: "10 Feb, 2024", title: "First Global", image: "images/camp-1.png" },
-  { id: 2, date: "12 Feb, 2024", title: "Anarock Thane Camp", image: "images/camp-2.png" },
-  { id: 3, date: "1 Mar, 2024", title: "Dainik Bhaskar Group", image: "images/camp-3.png" },
-  { id: 4, date: "1 Mar, 2024", title: "Dainik Bhaskar Group", image: "images/camp-4.png" },
+  { id: 1, date: "10 Feb, 2024", title: "First Global", image: "images/camp-1.png", details: `
+  We're excited to share that Aapkacare recently collaborated with Mumbai Eye Care Hospital to organize an exceptional Eye Check-up Camp exclusively for the employees and families of First Global at Vashi premises in Navi Mumbai!
+  Ensuring the well-being of our community members is at the heart of what we do, and this initiative underscores our commitment to prioritize vision health. 
+
+  With the support of Mumbai Eye Care Hospital expert team, attendees had the opportunity to undergo comprehensive eye examinations, ensuring early detection of any potential issues and promoting proactive eye care practices. 
+
+  We believe that investing in preventive healthcare is crucial, and this Eye Check-up Camp reflects our dedication to fostering a culture of wellness within the First Global family and beyond. 
+
+  A huge thank you to all the participants and our partners for making this event a resounding success! Let's continue to prioritize our health and well-being together.`, city:"Mumbai" },
+  { id: 2, date: "12 Feb, 2024", title: "Anarock Thane Camp", image: "images/camp-2.png", details: `
+  We're thrilled to announce our recent collaboration with Mumbai Eye Care Hospital to host an exclusive Eye Check-up Camp for the dedicated employees of ANAROCK at both BKC and Thane premises in Mumbai! 
+
+  At Aapkacare, we are deeply committed to ensuring the health and well-being of our community members, and this initiative further solidifies our dedication to prioritizing vision health. 
+
+  With the support of Mumbai Eye Care Hospital skilled team, attendees had the opportunity to undergo thorough eye examinations, facilitating early detection of potential issues and promoting proactive eye care practices. 
+
+  We firmly believe in the importance of preventive healthcare, and this Eye Check-up Camp is a testament to our ongoing efforts to cultivate a culture of wellness within the ANAROCK family and beyond. 
+
+  A heartfelt thank you to all the participants and our esteemed partners for contributing to the success of this event! Let's continue to prioritize our health and well-being together.`, city:"Mumbai" },
+  { id: 3, date: "1 Mar, 2024", title: "Dainik Bhaskar Group", image: "images/camp-3.png", details: `
+  Clear Eyes, Bright Ideas! 
+
+  We're thrilled to share our recent collaboration with Mumbai Eye Care Hospital in hosting an exceptional Eye Check-up Camp for the amazing team at Dainik Bhaskar Group (दैनिक भास्कर) / DB Power Limited! 
+
+  This successful event provided more than 100 employees with the opportunity to prioritize their vision health through comprehensive check-ups performed by our expert team. 
+
+  What did the employees receive? 
+
+  Comprehensive eye examinations: Vision tests, screenings for common conditions, and personalized consultations. 
+
+  Educational sessions: Learning about the importance of regular eye care, proper eyewear, and preventive measures. 
+
+  We're truly inspired by the enthusiasm and engagement of the Dainik Bhaskar Group (दैनिक भास्कर) / DB Power Limited team in prioritizing their well-being! 
+
+  A big thank you to Mumbai Eye Care Hospital for their incredible partnership and dedication to promoting vision health. We also extend our gratitude to Dainik Bhaskar Group (दैनिक भास्कर) / DB Power Limited for supporting their employees' wellness.`, city:"Naman cororate group" },
+  { id: 4, date: "14 Feb, 2024", title: "Anarock BKC", image: "images/camp-4.png", details: `
+  We're thrilled to announce our recent collaboration with Mumbai Eye Care Hospital to host an exclusive Eye Check-up Camp for the dedicated employees of ANAROCK at both BKC and Thane premises in Mumbai! 
+
+  At Aapkacare, we are deeply committed to ensuring the health and well-being of our community members, and this initiative further solidifies our dedication to prioritizing vision health. 
+
+  With the support of Mumbai Eye Care Hospital skilled team, attendees had the opportunity to undergo thorough eye examinations, facilitating early detection of potential issues and promoting proactive eye care practices. 
+
+  We firmly believe in the importance of preventive healthcare, and this Eye Check-up Camp is a testament to our ongoing efforts to cultivate a culture of wellness within the ANAROCK family and beyond. 
+
+  A heartfelt thank you to all the participants and our esteemed partners for contributing to the success of this event! Let's continue to prioritize our health and well-being together.`, city:"bkc" },
 ];
 
 const CareCamps = () => {

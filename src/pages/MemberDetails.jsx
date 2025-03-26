@@ -7,21 +7,21 @@ const members = [
     name: "ADITYA PRAKASH",
     role: "Co-Founder",
     image: "images/fou-1.png",
-    bio: "Aditya Prakash is a visionary entrepreneur leading innovation...",
+    bio: `Aaditya Prakash is a dynamic entrepreneur and technology leader, currently serving as the Co-Founder of Aapkacare. With extensive experience in digital transformation and healthcare innovation, he has been pivotal in shaping the company's vision to enhance healthcare accessibility. Prior to Aapkacare, Aaditya founded several successful ventures, including ADS, FD Supermart, and Fuerte Developers, where he developed expertise in business strategy, product management, and operational excellence. His diverse background in technology-driven sectors fuels his commitment to bridging the gap between healthcare and digital solutions, ensuring that quality care is accessible to everyone.`,
   },
   {
     id: 2,
     name: "MOHIT AHUJA",
     role: "Co-Founder & CMO",
     image: "images/fou-2.png",
-    bio: "Mohit Ahuja specializes in marketing strategies...",
+    bio: `Mohit Ahuja is a dynamic leader in the health and wellness sector, currently serving as Co-Founder and CMO at Aapkacare. An MBA graduate, Mohit has worked in various fields to gain a comprehensive understanding of the market. He has held key positions at PharmEasy as Regional Operations Head and Pristyn Care as Operations Manager, and excelled as a Relationship Manager at Azizi Developments in Dubai, where he managed high-end client portfolios. His expertise in strategic planning and marketing, combined with a passion for enhancing healthcare experiences, positions him as a vital asset to our team as we strive to provide comprehensive health solutions.`,
   },
   {
     id: 3,
     name: "ABHISHEK KUMAR",
     role: "Co-founder, Aapkacare",
     image: "images/fou-3.png",
-    bio: "Abhishek Kumar is committed to improving healthcare...",
+    bio: `Abhishek Kumar is a dynamic co-founder of Aapkacare, with extensive experience in business strategy, operations, and growth across the healthcare, e-commerce, and technology sectors. He has held key roles at leading companies, including PharmEasy as Procurement Head (Pan India) and Pristyn Care, where he contributed to business expansion, partnerships, and customer growth. Abhishek's expertise in digital transformation, partnerships, and operations management helps him drive Aapkacare's mission to enhance healthcare accessibility through innovative digital solutions. His leadership is focused on building sustainable healthcare systems and empowering hospitals to improve patient care.`,
   },
 ];
 
@@ -34,12 +34,22 @@ const MemberDetails = () => {
   }
 
   return (
-    <div className="flex flex-col items-center p-10">
-      <img src={`../${member.image}`} alt={member.name} className="w-40 h-40 rounded-full border-4 border-gray-300" />
-      <h2 className="text-2xl font-bold mt-4">{member.name}</h2>
-      <p className="text-gray-600 text-lg">{member.role}</p>
-      <p className="text-gray-800 mt-4 text-center max-w-2xl">{member.bio}</p>
+    <>
+    <div className="container mx-auto px-4 md:px-8 py-12">
+      <div className="flex flex-col md:flex-row gap-8">
+        <div className="md:w-1/2">
+          <img src={`../${member.image}`} alt={member.name} className="w-full h-auto mt-4 rounded-lg shadow-md" />
+        </div>
+        <div className="md:w-3/4 space-y-4">
+          <h1 className="text-3xl font-bold text-gray-800">{member.name}</h1>
+          <h1 className="text-2xl text-gray-600">{member.role}</h1>
+          {member.bio.split("\n").map((para, index) => (
+            <p key={index} className="text-gray-600">{para}</p>
+          ))}
+        </div>
+      </div>
     </div>
+    </>
   );
 };
 

@@ -30,7 +30,7 @@ function HospitalSearch() {
       <div className="relative w-full max-w-lvh">
         <div className="flex items-center border border-gray-300 p-3 rounded-md bg-white shadow-md w-full gap-2">
           <div 
-            className="flex items-center flex-grow cursor-pointer border border-b-gray-800 rounded-md h-[50px]" 
+            className="flex items-center flex-grow cursor-pointer border border-b-gray-800 rounded-md h-[50px] px-2" 
             onClick={() => setIsOpen(!isOpen)}
           >
             <FaMapMarkerAlt className="text-gray-500 mr-2" />

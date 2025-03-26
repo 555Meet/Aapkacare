@@ -8,21 +8,18 @@ const BoardMembers = () => {
       name: "ADITYA PRAKASH",
       role: "Co-Founder",
       image: "images/fou-1.png",
-      bio: "Aditya Prakash is a visionary entrepreneur...",
     },
     {
       id: 2,
       name: "MOHIT AHUJA",
       role: "Co-Founder & CMO",
       image: "images/fou-2.png",
-      bio: "Mohit Ahuja is a marketing expert...",
     },
     {
       id: 3,
       name: "ABHISHEK KUMAR",
       role: "Co-founder, Aapkacare",
       image: "images/fou-3.png",
-      bio: "Abhishek Kumar is passionate about healthcare...",
     },
   ];
 

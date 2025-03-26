@@ -125,12 +125,13 @@ const Header = () => {
                 {item.name}
               </button>
             ))}
-            <span className="px-4 py-2 border-2 border-white hover:bg-[green] rounded-md">
+            <a href="tel:9821527088" className="px-4 py-2 border-2 border-white hover:bg-[green] rounded-md">
               +919821527088
-            </span>
-            <a
-              href="#"
-              className="border-2 border-white px-4 py-2 rounded-md bg-white text-black"
+            </a>
+            <a onClick={() => {
+              window.open('https://api.whatsapp.com/send/?phone=%2B919821527088&text=Hello%21&type=phone_number&app_absent=0');
+              }}
+              className="border-2 border-white px-4 py-2 rounded-md bg-white text-black cursor-pointer"
             >
               Chat
             </a>

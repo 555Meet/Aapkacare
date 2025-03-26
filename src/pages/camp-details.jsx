@@ -17,8 +17,11 @@ const CampDetails = () => {
         </div>
         <div className="md:w-1/2 space-y-4">
           <h1 className="text-3xl font-bold text-gray-800">{camp.title}</h1>
-          <p className="text-gray-600 ">{camp.date}</p>
-          <p className="mt-4 text-gray-700">More details about {camp.title} coming soon...</p>
+          <h1 className="text-2xl text-gray-800">{camp.city}</h1>
+          <p className="text-gray-600">{camp.date} ~ {camp.date}</p>
+          {camp.details.split("\n").map((para, index) => (
+            <p key={index} className="text-gray-600">{para}</p>
+          ))}
         </div>
       </div>
     </div>
