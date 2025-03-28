@@ -2,14 +2,14 @@ import React from "react";
 
 const Pagination = ({ currentPage, onPageChange }) => {
   return (
-    <div className="flex justify-center space-x-2 mt-6">
+    <div className="flex justify-center md:space-x-2 mt-6 space-x-1">
       {/* Previous Button */}
       <button
         className={`px-4 py-2 rounded-md ${currentPage === 1 ? "bg-gray-300" : "bg-blue-500 text-white"}`}
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        &lt; Prev
+        &lt;
       </button>
 
       {/* Hardcoded Page Numbers */}
@@ -56,7 +56,7 @@ const Pagination = ({ currentPage, onPageChange }) => {
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === 6}
       >
-        Next &gt;
+        &gt;
       </button>
     </div>
   );

@@ -1,16 +1,14 @@
-import React from "react";
-
-const SearchBar = ({ searchTerm, setSearchTerm }) => {
+const SearchBar = ({ search, setSearch }) => {
   return (
-    <div className="mb-4">
-      <input
-        type="text"
-        placeholder="Search blogs..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="w-full p-2 border rounded-md"
-      />
-    </div>
+    <input
+      type="text"
+      placeholder="Search..."
+      className="border p-2 md:w-7xl w-full mb-4 rounded md:mx-14 mx-auto"
+      value={search}
+      onChange={(e) => {
+        setSearch(e.target.value);
+      }}
+    />
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Pagination from "../../component/Pagination";
 import { FaUser, FaClock, FaFolder, FaComments } from "react-icons/fa"
+import SearchBar from "../../component/SearchBar";
 
 const itemsPerPage = 12;
 
@@ -398,16 +399,27 @@ const blogData =[
   },
 ];
 const Blog = () => {
+  const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  
+  // Filter data based on search query
+  const filteredData = blogData.filter((item) =>
+  item.title.toLowerCase().includes(search.toLowerCase())
+);
 
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentItems = blogData.slice(startIndex, startIndex + itemsPerPage);
+const startIndex = (currentPage - 1) * itemsPerPage;
+const paginatedData = filteredData.slice(startIndex, startIndex + itemsPerPage);
 
   return (
 <div>
       <div className="p-6 min-h-screen bg-gray-100">
+        {/* Search Bar Component */}
+        <SearchBar search={search} setSearch={(value) => {
+          setSearch(value);
+          setCurrentPage(1); // Reset to page 1 on search
+        }} />
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6 bg-white rounded-lg shadow-lg">
-          {currentItems.map((item) => (
+          {paginatedData.map((item) => (
             <Link
               key={item.id}
               to={`/blog/${item.id}`}
