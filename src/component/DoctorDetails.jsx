@@ -12,7 +12,7 @@ const DoctorDetails = () => {
   const faqs = [
     {
       title: "What does Dr Sabiha Anjum S specialise in? ",
-      content: `Dr Sabiha Anjum S specialises in Gynaecology and IVF Specialist `
+      content: `Dr Sabiha Anjum S specialises in Gynaecology and IVF Specialist. `
     },
     {
       title: "How to book an appointment with Dr Sabiha Anjum S ",
@@ -28,15 +28,21 @@ const DoctorDetails = () => {
       setOpenIndex(openIndex === index ? null : index);
   };
 
-  const { id } = useParams();
+  const { name } = useParams(); // Get the doctor name from URL
   const [doctor, setDoctor] = useState(null);
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${id}`) // Replace with actual API
+    fetch("https://api-uhxf.onrender.com/users")
       .then((res) => res.json())
-      .then((data) => setDoctor(data))
-      .catch((error) => console.error("Error fetching doctor:", error));
-  }, [id]);
+      .then((data) => {
+        console.log("✅ API Response:", data); // Debugging
+        const foundDoctor = data.find(
+          (doc) => doc.name.toLowerCase() === decodeURIComponent(name).toLowerCase()
+        );
+        setDoctor(foundDoctor || null);
+      })
+      .catch((error) => console.error("❌ Error fetching doctor:", error));
+  }, [name]);
 
   if (!doctor) {
     return <p className="text-center">Loading...</p>;
@@ -44,38 +50,17 @@ const DoctorDetails = () => {
 
   return (
     <>
-    <div className="p-6 max-w-2xl mx-auto bg-white shadow-lg rounded-lg">
-      <img
-        src={doctor.image || "https://via.placeholder.com/150"}
-        alt={doctor.name}
-        className="w-32 h-32 rounded-full mx-auto border"
-      />
-      <h2 className="text-2xl font-bold text-center mt-4">{doctor.name}</h2>
-      <p className="text-center text-gray-600">{doctor.specialization}</p>
-      <p className="text-center text-gray-500">{doctor.experience} Years Experience</p>
-      <p className="text-center text-green-600 font-bold">
-        <s className="text-gray-400">₹{doctor.price}</s> Free Booking
-      </p>
-      <h3 className="text-lg font-semibold mt-4">Achievements:</h3>
-      <ul className="list-disc list-inside text-gray-700">
-        {doctor.achievements?.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <p className="mt-4 text-lg font-semibold">Clinic Location: {doctor.location}</p>
-    </div>
-
     <div className="bg-blue-50 min-h-screen p-6">
       <div className="max-w-5xl mx-auto bg-white p-6 rounded-lg shadow-lg">
         {/* Doctor Profile Section */}
         <div className="flex flex-wrap items-center gap-6">
           <img
-            src="/doctor.jpg"
-            alt="Dr. A D Suri"
+            src={doctor.image}
+            alt={doctor.name}
             className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border"
           />
           <div>
-            <h1 className="text-xl sm:text-2xl font-bold">Dr A D Suri</h1>
+            <h1 className="text-xl sm:text-2xl font-bold">{doctor.name}</h1>
             <p className="text-blue-600 text-sm sm:text-base">17+ Years Experience</p>
             <p className="text-gray-600 text-sm sm:text-base">
               MBBS, MD Medicine, DM Nephrology, DNB Nephrology | Nephrology
@@ -87,6 +72,9 @@ const DoctorDetails = () => {
             <p className="text-gray-500 text-sm sm:text-base">
               E-8 Extension, Arera Colony, Bhopal, MP, 462026
             </p>
+            <p className="text-green-600 font-bold">
+            <s className="text-gray-400">{doctor.prices}</s> Free Booking
+      </p>
           </div>
         </div>
 

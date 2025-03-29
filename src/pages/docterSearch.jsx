@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaSearch, FaMapMarkerAlt } from "react-icons/fa";
 
 function DocterSearch() {
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState("");
-  const [selectedLocation, setSelectedLocation] = useState("Select Location");
+  const [selectedLocation, setSelectedLocation] = useState("");
+  const [locations, setLocations] = useState([]); // Stores API city list
+  const navigate = useNavigate();
 
-  const locations = ["Bangalore", "Vizag", "Mumbai", "Nizambad", "Aurangabad", "Pune","Karimnagar","Vizianagaram", "Kurnool", "Chandanagar", "Sangamner", "Madhapur", "Nellore","Gurgaon", "Hyderabad", "Naskit", "Srikulam", "Begumnet", "Navi Mumbai", "Thane", "Delhi", "Noida"];
-  
+  useEffect(() => {
+    fetch("https://api-uhxf.onrender.com/users") // API that contains doctor data
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("✅ API Data:", data);
+        const uniqueCities = [...new Set(data.map((doctor) => doctor.city))]; // Extract unique cities
+        setLocations(uniqueCities);
+      })
+      .catch((error) => console.error("❌ Error fetching cities:", error));
+  }, []);
+
   const filteredLocations = locations.filter((loc) =>
     loc.toLowerCase().includes(search.toLowerCase())
   );
@@ -18,23 +30,28 @@ function DocterSearch() {
   };
 
   const handleSearch = () => {
-    console.log("Searching for:", selectedLocation);
+    if (!selectedLocation) {
+      alert("⚠️ Please select a location before searching.");
+      return;
+    }
+
+    console.log("✅ Navigating with city:", selectedLocation);
+    navigate(`/doctors?city=${encodeURIComponent(selectedLocation)}`);
   };
 
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center">
       {/* Header Section */}
-      <img src="/images/hospital-search.png" alt="Hospital Search" className="w-full h-auto mb-6" />
-      
+      <img src="/images/hs-main.png" alt="Hospital Search" className="w-full h-auto mb-6" />
       {/* Search Section */}
       <div className="relative w-full max-w-lvh">
         <div className="flex items-center border border-gray-300 p-3 rounded-md bg-white shadow-md w-full gap-2">
           <div 
-            className="flex items-center flex-grow cursor-pointer border border-b-gray-800 rounded-md h-[50px]" 
+            className="flex items-center flex-grow cursor-pointer border border-b-gray-800 rounded-md h-[50px] px-3"
             onClick={() => setIsOpen(!isOpen)}
           >
             <FaMapMarkerAlt className="text-gray-500 mr-2" />
-            <span>{selectedLocation}</span>
+            <span>{selectedLocation || "Select Location"}</span>
           </div>
           <button 
             className="ml-auto px-4 py-2 bg-blue-500 text-white rounded-md flex items-center gap-2 hover:bg-blue-600 transition"
@@ -54,23 +71,26 @@ function DocterSearch() {
               onChange={(e) => setSearch(e.target.value)}
             />
             <ul className="max-h-40 overflow-y-auto">
-              {filteredLocations.map((location, index) => (
-                <li
-                  key={index}
-                  className="flex items-center p-3 hover:bg-gray-100 cursor-pointer"
-                  onClick={() => handleSelect(location)}
-                >
-                  <FaSearch className="text-gray-500 mr-2" />
-                  {location}
-                </li>
-              ))}
+              {filteredLocations.length > 0 ? (
+                filteredLocations.map((location, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center p-3 hover:bg-gray-100 cursor-pointer"
+                    onClick={() => handleSelect(location)}
+                  >
+                    <FaSearch className="text-gray-500 mr-2" />
+                    {location}
+                  </li>
+                ))
+              ) : (
+                <li className="p-3 text-gray-500">❌ No matching city found</li>
+              )}
             </ul>
           </div>
         )}
       </div>
-
-      {/* Steps Section */}
-      <div className="mt-10 text-center w-full max-w-2xl">
+            {/* Steps Section */}
+            <div className="mt-10 text-center w-full max-w-2xl">
         <h2 className="text-2xl font-semibold mb-3">3-Step Process to Book an Appointment</h2>
         <p className="text-gray-600 mb-6">Easily book your hospital appointments online, saving time and reducing hassle of trditional appointments booking methods.</p>
         
@@ -91,6 +111,6 @@ function DocterSearch() {
       </div>
     </div>
   );
-};
+}
 
 export default DocterSearch;

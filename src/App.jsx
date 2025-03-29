@@ -41,6 +41,7 @@ import Blog from './pages/Blog/blog';
 import BlogDetails from './pages/Blog/BlogDetails';
 import DoctorList from './pages/DoctorList';
 import DoctorDetails from './component/DoctorDetails';
+import HospitalList from './pages/hostipalList';
 
 
 function App() {
@@ -84,8 +85,9 @@ function App() {
                 <Route path="/pages/docterSearch" element={<DocterSearch/>} />
                 <Route path="/Blog" element={<Blog/>} />
                 <Route path="/Blog/:id" element={<BlogDetails />} />
-                <Route path='/doctor' element={<DoctorList/>}/>
-                <Route path='/doctor/:id' element={<DoctorDetails/>}/>
+                <Route path='/docters?/:selectedCity' element={<DoctorList/>}/>
+                <Route path='/doctor-details/:name' element={<DoctorDetails/>}/>
+                <Route path='/pages/HospitalSearch/:selectedHospital' element={<HospitalList/>}/>
             </Routes>
             <FooterPune />
             <Footer />
