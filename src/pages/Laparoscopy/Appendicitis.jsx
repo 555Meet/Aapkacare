@@ -41,8 +41,8 @@ const Appendicitis = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Appendicitis Treatment in Pune </h1>
                         <p className="text-gray-600 mt-2">Chronic or acute appendicitis can affect people of all age groups. Undergo minimally invasive laparoscopic appendectomy at the hands of experienced surgeons. Get rid of the constant pain in the right side of the abdomen through a painless procedure.
@@ -65,7 +65,7 @@ const Appendicitis = () => {
                 </section>
             </div>
             <ReactUs/>
-            <div className="max-w-full mx-auto p-6 bg-white rounded-lg">
+            <div className="max-w-7xl mx-auto p-6 bg-white rounded-lg">
                 <h1 className="text-center text-3xl font-bold mb-6">Understand the causes of Appendicitis </h1>
                 <p className="text-center text-xl mb-6 border">
                 </p>
@@ -82,7 +82,7 @@ const Appendicitis = () => {
             </div>
 
             <div class="bg-white text-gray-800 font-sans">
-                <div class="container mx-auto p-4">
+                <div class="container max-w-6xl mx-auto p-4">
                     <div class="flex flex-col lg:flex-row">
                         <div class="lg:w-2/3">
                             <h1 class="text-3xl font-bold mb-4">Symptoms of appendicitis</h1>
@@ -108,13 +108,21 @@ const Appendicitis = () => {
                                     Various imaging studies can help confirm the presence of gallstones and assess the severity of the condition. Standard imaging tests are: Ultra Sound, CT Scan, MRI, HIDA Scan
                                 </li>
                             </ul>
-                            <p class="mb-4">Appendicitis is considered a medical emergency, and if you suspect you or someone you know has appendicitis, it’s essential to seek immediate medical attention. Treatment typically involves surgical removal of the inflamed appendix, an appendectomy procedure. This surgery is usually done laparoscopically or through a small incision in the abdomen.
+                            <p class="mb-4">
+                            Appendicitis is considered a medical emergency, and if you suspect you or someone you know has appendicitis, it’s essential to seek immediate medical attention. Treatment typically involves surgical removal of the inflamed appendix, an appendectomy procedure. This surgery is usually done laparoscopically or through a small incision in the abdomen.
                             </p>
-                            <p>Prompt treatment is crucial because if the appendix ruptures, it can lead to a potentially life-threatening condition called peritonitis, where the infection spreads throughout the abdominal cavity. Therefore, if you suspect appendicitis, contact a healthcare professional immediately.
+                            <p>
+                            Prompt treatment is crucial because if the appendix ruptures, it can lead to a potentially life-threatening condition called peritonitis, where the infection spreads throughout the abdominal cavity. Therefore, if you suspect appendicitis, contact a healthcare professional immediately.
                             </p>
                         </div>
                         <div class="lg:w-1/3 lg:pl-8 mt-8 lg:mt-0">
-                            <img alt="Medical professionals performing surgery in an operating room" class="rounded-lg shadow-lg" height="300" src="https://storage.googleapis.com/a1aa/image/KOgzkyHXQ8IJgxCvSA2qDgk5CT0S1k45VxGiA2Z7uOU.jpg" width="400"/>
+                            <img 
+                                alt="Medical professionals performing surgery in an operating room"
+                                class="rounded-lg shadow-lg" 
+                                height="300" 
+                                src="https://storage.googleapis.com/a1aa/image/KOgzkyHXQ8IJgxCvSA2qDgk5CT0S1k45VxGiA2Z7uOU.jpg" 
+                                width="400"
+                            />
                         </div>
                     </div>
                 </div>

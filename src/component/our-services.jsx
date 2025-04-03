@@ -22,30 +22,30 @@ const services = [
         image: "images/Services-4.png"
     },
     {
-        title: "Eye Care ",
+        title: "Eye Care",
         description: "Eye is the most sensitive organ of the body. Aapkacare ensures that you get the best eye surgeon near you for the treatment of eye disorders or lasik eye surgery. Be it cataract, retinal disorders, pterygium, squint eye, diabetic retinopathy we got you covered for everyting with our best ophthalmologist doctors.",
         image: "images/Services-5.png"
     },
     {
-        title: "Cosmetic ",
+        title: "Cosmetic",
         description: "We know the disappointment you face when you hear that cosmetic surgery is not covered under insurance. With our best hospital and expert doctors, you can undergo any surgery, such as Gynecomastia, Lipoma, Hair transplant, and Scar removal, with a hassle-free procedure.",
         image: "images/Services-6.png"
     },
 ];
 
 const ServiceCard = ({ title, description, image }) => (
-    <div className="bg-white rounded-lg shadow-xl p-6 md:w-[350px] w-auto md:h-[500px] h-auto flex flex-col items-center text-center">
+    <div className="bg-white rounded-lg shadow-xl p-6 flex flex-col items-center text-center min-h-[550px]">
         <img src={image} alt={title} className="rounded-lg mb-4 h-[200px] w-[325px] object-cover"/>
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 line-clamp-4">{description}</p>
     </div>
 );
 
 const OurServices = () => {
     return (
-        <div className="bg-blue-50 py-12 md:px-25 px-7">
+        <div className="bg-blue-50 py-12 px-6 sm:px-12 lg:px-24 container mx-auto max-w-full">
             <h2 className="text-2xl font-bold text-center mb-8">Our Services</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {services.map((service, index) => (
                     <ServiceCard 
                         key={index}

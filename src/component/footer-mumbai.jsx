@@ -60,16 +60,18 @@ const services = [
 
 const FooterMumbai = () => {
   return (
-    <div className="bg-gray-800 p-8 text-white">
-      <h1 className="text-4xl font-bold text-left ml-7 mb-8">Aapka Care Services In Pune</h1>
-      <div className="grid grid-cols-1 md:grid-cols-6">
+    <footer className="bg-gray-800 p-8 text-white">
+      <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left mb-8">
+        Aapka Care Services In Mumbai
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
         {services.map((service, index) => (
-          <div key={index} className="p-6">
-            <h2 className="text-2xl font-semibold mb-4">{service.title}</h2>
-            <ul className="list-disc pl-5">
+          <div key={index} className="p-4">
+            <h2 className="text-xl md:text-2xl font-semibold mb-3">{service.title}</h2>
+            <ul className="space-y-2">
               {service.items.map((item, idx) => (
-                <li key={idx} className="mb-2">
-                  <Link to={item.path} className="text-white hover:text-blue-300 ">
+                <li key={idx}>
+                  <Link to={item.path} className="text-white hover:text-blue-400 transition-colors duration-200">
                     {item.name}
                   </Link>
                 </li>
@@ -78,7 +80,7 @@ const FooterMumbai = () => {
           </div>
         ))}
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -9,8 +9,8 @@ const Gallbladder = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto md:px-16 px-0">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Gallbladder Stone Surgery in Pune </h1>
                         <p className="text-gray-600 mt-2">Gallbladder stones (cholelithiasis) can be silent or cause unbearable pain if they get stuck. Our gallstone specialists in Pune use gallstone surgery (cholecystectomy) to resolve the condition effectively. Consult the best gallstone surgeons in Pune using advanced techniques for gallstone treatment.

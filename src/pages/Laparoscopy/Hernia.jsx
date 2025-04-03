@@ -93,8 +93,8 @@ const Hernia = () => {
     return (
         <>
            <MainTop/>
-           <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+           <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Hernia Treatment in Pune </h1>
                         <p className="text-gray-600 mt-2">Hernia is one of India's most common medical conditions, affecting almost 12% of our adult population. But thanks to Aapkacare Health, you now have access to advanced treatments from expert surgeons, insurance support, personalised care and much more at the most affordable prices. Read further to learn more about hernia, how to get the best treatment, and why Aapkacare Health is your go-to healthcare partner.
@@ -118,7 +118,7 @@ const Hernia = () => {
             </div>
             <div className="max-w-full mx-auto p-6 bg-[#E2F2FD] rounded-lg">
                 <h2 className="text-center text-3xl font-bold mb-6">Identify the Signs of Hernia </h2>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-1 md:mx-20 mx-5 text-center">
                     {reasons.slice(0, 4).map((reason, index) => (
                     <div key={index} className="p-4">
                         <img src={reason.icon} alt={reason.title} className="mx-auto w-12 h-12 mb-4" />
@@ -129,7 +129,7 @@ const Hernia = () => {
                 </div>
             </div>
 
-            <div className="max-w-full mx-auto p-6 bg-white rounded-lg">
+            <div className="max-w-7xl mx-auto p-6 bg-white rounded-lg">
                 <h1 className="text-center text-3xl font-bold mb-6">Understand the causes of Hernia</h1>
                 <p className="text-center text-xl mb-6">
                 Hernias develop when a combination of muscle weakness and increased pressure on the abdominal wall. The specific causes of hernias can vary depending on the type of hernias. Some common causes of Hernia include:

@@ -30,24 +30,20 @@ const services = [
 
 const Boxes = () => {
   return (
-    <div className="relative">
-      {/* Background Section */}
-      <div className="absolute top-0 left-0 w-full h-1/2 bg-white"></div>
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-[#E8F7FF]"></div>
-
+    <div className="relative bg-gradient-to-b from-white to-[#E8F7FF] py-16">
       {/* Content Section */}
-      <div className="relative container mx-auto py-16 px-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="container mx-auto px-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md text-center border border-gray-300"
+              className="bg-white p-6 rounded-xl shadow-md text-center border border-gray-300 hover:shadow-lg transform hover:-translate-y-2 transition-all duration-300"
             >
               <div className="bg-[#1EB4FD] w-14 h-14 mx-auto flex items-center justify-center rounded-lg">
                 {service.icon}
               </div>
-              <h3 className="mt-4 text-lg font-semibold">{service.title}</h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
+              <h3 className="mt-4 text-lg font-semibold text-gray-900">{service.title}</h3>
+              <p className="text-gray-600 mt-2 leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

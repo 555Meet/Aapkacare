@@ -85,8 +85,8 @@ const MoleRemoval = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Mole Removal Surgery in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Mole removal surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons 

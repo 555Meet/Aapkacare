@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const steps=[{
+const steps = [
+  {
     step: "Step 1",
     title: "Connect with a care expert",
     description: "Share your details & surgery preferences",
@@ -24,41 +25,47 @@ const steps=[{
     step: "Step 4",
     title: "Post-surgery support",
     description:
-      "Free follow-ups post-surgery, One year Aapka Care plus subscription",
+      "Free follow-ups post-surgery, One year Aapka Care Plus subscription",
     image: "images/work-4.png",
   },
 ];
+
 const OurWork = () => {
-    return (
-    <>
-    <section className="py-12 px-6 bg-gray-50">
-      <div className="max-w-6xl mx-auto text-center">
-        <p className="text-gray-500">It's really easy</p>
-        <h2 className="text-3xl font-bold text-gray-800">Here is how it works</h2>
+  return (
+    <section className="py-12 px-4 md:px-6 lg:px-8 bg-gray-50">
+      {/* Heading */}
+      <div className="max-w-4xl mx-auto text-center">
+        <p className="text-gray-500 text-lg">It's really easy</p>
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2">
+          Here is how it works
+        </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto mt-10">
+      {/* Steps Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 max-w-6xl mx-auto">
         {steps.map((step, index) => (
           <div
             key={index}
-            className="flex flex-col md:flex-row items-center md:items-start space-x-0 md:space-x-4"
+            className="flex flex-col md:flex-row items-center text-center md:text-left bg-white p-6 rounded-lg shadow-md w-full max-w-full"
           >
+            {/* Step Image */}
             <img
               src={step.image}
               alt={step.title}
-              className="w-auto md:w-[300px] h-[200px] object-cover rounded-lg shadow-md"
+              className="w-full md:w-40 lg:w-48 h-auto object-contain rounded-lg shadow-md max-w-xs mx-auto md:mx-0"
             />
-            <div className="mt-0 md:mt-4 text-center md:text-left">
-              <p className="text-gray-400 font-semibold">{step.step}</p>
-              <h3 className="text-xl font-bold text-gray-800">{step.title}</h3>
-              <p className="text-gray-600">{step.description}</p>
+
+            {/* Step Text */}
+            <div className="mt-4 md:mt-0 md:ml-6">
+              <p className="text-gray-800 font-semibold text-lg">{step.step}</p>
+              <h3 className="text-lg md:text-xl font-bold text-gray-800">{step.title}</h3>
+              <p className="text-gray-600 leading-relaxed mt-2">{step.description}</p>
             </div>
           </div>
         ))}
       </div>
-    </section>  
-    </>
-    );
-}
+    </section>
+  );
+};
 
 export default OurWork;

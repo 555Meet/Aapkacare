@@ -14,7 +14,7 @@ function HospitalSearch() {
       .then((res) => res.json())
       .then((data) => {
         console.log("✅ API Data:", data);
-        const uniqueHospitals = [...new Set(data.map((hospital) => hospital.hospitalName))];
+        const uniqueHospitals = [...new Set(data.map((hospital) => hospital.city))];
         setHospitalList(uniqueHospitals);
       })
       .catch((error) => console.error("❌ Error fetching hospital:", error));
@@ -34,14 +34,14 @@ function HospitalSearch() {
       alert("⚠️ Please select a hospital before searching.");
       return;
     }
-    navigate(`${encodeURIComponent(chosenHospital)}`);
+    navigate(`/hospitalRecords?city=${encodeURIComponent(chosenHospital)}`);
   };
 
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center">
       <img src="/images/hs-main.png" alt="Hospital Search" className="w-full h-auto mb-6" />
       
-      <div className="relative w-full max-w-lg">
+      <div className="relative w-full max-w-lvh">
         <div className="flex items-center border border-gray-300 p-3 rounded-md bg-white shadow-md w-full gap-2">
           <div 
             className="flex items-center flex-grow cursor-pointer border border-b-gray-800 rounded-md h-[50px] px-3"
@@ -85,6 +85,30 @@ function HospitalSearch() {
             </ul>
           </div>
         )}
+      </div>
+      {/* Steps Section */}
+      <div className="mt-10 text-center w-full max-w-2xl">
+        <h2 className="text-2xl font-semibold mb-3">4-Step Process to Book an Appointment</h2>
+        <p className="text-gray-600 mb-6">Easily book your hospital appointments online, saving time and reducing hassle of trditional appointments booking methods.</p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div className="flex flex-col items-center">
+            <img src="/images/hs-1.png" alt="Choose Date" className="w-16 h-16 mb-2 border border-gray-300 rounded" />
+            <p className="text-gray-700">Find Hospital</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/images/hs-1.png" alt="Select Doctor" className="w-16 h-16 mb-2 border border-gray-300 rounded" />
+            <p className="text-gray-700">Select Doctor</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/images/hs-2.png" alt="Choose Date" className="w-16 h-16 mb-2 border border-gray-300 rounded" />
+            <p className="text-gray-700">Choose Date</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img src="/images/hs-3.png" alt="Book Appointment" className="w-16 h-16 mb-2 border border-gray-300 rounded" />
+            <p className="text-gray-700">Book Appointment</p>
+          </div>
+        </div>
       </div>
     </div>
   );

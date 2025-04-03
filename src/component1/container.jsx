@@ -1,7 +1,6 @@
 import React from "react";
 import ReasonCard from "./ReasonCard";
 
-
 const ReasonsForLasik = () => {
   const reasons = [
     {
@@ -37,18 +36,12 @@ const ReasonsForLasik = () => {
   ];
 
   return (
-    <div className="max-w-full mx-auto p-6 bg-[#E2F2FD] rounded-lg">
+    <div className="max-w-7xl mx-auto p-6 bg-[#E2F2FD] rounded-lg">
       <h2 className="text-center text-3xl font-bold mb-6">Reasons to Get LASIK Surgery</h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 text-center">
-        {reasons.slice(0, 4).map((reason, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+        {reasons.map((reason, index) => (
           <ReasonCard key={index} {...reason} />
         ))}
-        <div className="md:col-start-2 md:row-start-2">
-          <ReasonCard {...reasons[4]} />
-        </div>
-        <div className="md:col-start-3 md:row-start-2">
-          <ReasonCard {...reasons[5]} />
-        </div>
       </div>
     </div>
   );

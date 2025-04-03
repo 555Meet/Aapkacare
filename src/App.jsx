@@ -1,7 +1,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Navbar from './component/Navbar';
+import Navbar from './component/navbar';
 import FooterPune from './component/footer-pune';
 import Footer from './component/footer';
 import Header from './component/header';
@@ -42,6 +42,7 @@ import BlogDetails from './pages/Blog/BlogDetails';
 import DoctorList from './pages/DoctorList';
 import DoctorDetails from './component/DoctorDetails';
 import HospitalList from './pages/hostipalList';
+import HospDetails from './pages/hospDetails';
 
 
 function App() {
@@ -85,9 +86,10 @@ function App() {
                 <Route path="/pages/docterSearch" element={<DocterSearch/>} />
                 <Route path="/Blog" element={<Blog/>} />
                 <Route path="/Blog/:id" element={<BlogDetails />} />
-                <Route path='/docters?/:selectedCity' element={<DoctorList/>}/>
+                <Route path='/doctors' element={<DoctorList/>}/>
                 <Route path='/doctor-details/:name' element={<DoctorDetails/>}/>
-                <Route path='/pages/HospitalSearch/:selectedHospital' element={<HospitalList/>}/>
+                <Route path='/hospitalRecords' element={<HospitalList/>}/>
+                <Route path='/hospital-details' element={<HospDetails/>}/>
             </Routes>
             <FooterPune />
             <Footer />

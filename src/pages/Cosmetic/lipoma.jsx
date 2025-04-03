@@ -96,8 +96,8 @@ const Lipoma = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Lipoma Surgery in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Lipoma surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons. 
@@ -131,7 +131,7 @@ const Lipoma = () => {
                 </div>
             </div>
 
-            <div className="max-w-full mx-auto p-6 bg-white rounded-lg">
+            <div className="max-w-7xl mx-auto p-6 bg-white rounded-lg">
                 <h1 className="text-center text-3xl font-bold mb-6">Understanding the causes of Lipoma </h1>
                 <p className="text-center text-xl mb-6 ">Lipomas are likely inherited, so if someone in your family has a lipoma, you are more likely to get one yourself. Multiple lipomas can occur on the body as a result of certain conditions. These conditions include: 
                 </p>
@@ -178,7 +178,7 @@ const Lipoma = () => {
             </div>
             <Tretment/>
 
-            <div class="bg-white text-gray-800 font-sans">
+            <div class=" bg-white text-gray-800 font-sans">
                 <div class="container mx-auto py-4 md:px-20 px-5">
                     <div class="flex">
                         <div>

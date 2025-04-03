@@ -25,26 +25,36 @@ const BoardMembers = () => {
 
   return (
     <div className="bg-blue-100 py-10 px-4">
-      <h2 className="text-center text-2xl font-bold mb-8 text-gray-900">
-        Our Board Members
-      </h2>
+      <div className="max-w-screen-lg mx-auto">
+        <h2 className="text-center text-2xl md:text-3xl font-bold mb-8 text-gray-900">
+          Our Board Members
+        </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-        {members.map((member) => (
-          <Link to={`/board-member/${member.id}`} key={member.id} className="w-full max-w-[380px]">
-            <div className="bg-white rounded-lg shadow-lg flex items-center p-4 hover:bg-gradient-to-r from-blue-500 to-blue-300 transition duration-300 ease-in-out">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-20 h-20 rounded-full object-cover border-2 border-gray-300"
-              />
-              <div className="ml-4">
-                <h3 className="text-lg font-semibold text-gray-900">{member.name}</h3>
-                <p className="text-gray-600 text-sm">{member.role}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          {members.map((member) => (
+            <Link 
+              to={`/board-member/${member.id}`} 
+              key={member.id} 
+              className="w-full max-w-[380px]"
+            >
+              <div className="bg-white rounded-lg shadow-lg flex items-center p-4 hover:bg-gradient-to-r from-blue-500 to-blue-300 hover:shadow-2xl transition duration-300 ease-in-out">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-20 h-20 rounded-full object-cover border-2 border-gray-300"
+                />
+                <div className="ml-4">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 hover:text-white transition duration-300">
+                    {member.name}
+                  </h3>
+                  <p className="text-gray-600 text-sm md:text-base hover:text-white transition duration-300">
+                    {member.role}
+                  </p>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

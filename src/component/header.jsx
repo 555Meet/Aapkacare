@@ -17,7 +17,7 @@ const Header = () => {
 
   const menuItems = [
     { name: "Hospital", icon: <FaHospital className="text-blue-500" />, path: "../pages/HospitalSearch" },
-    { name: "Doctors", icon: <FaUserMd className="text-blue-500" />, path: "../pages/HospitalSearch" }
+    { name: "Doctors", icon: <FaUserMd className="text-blue-500" />, path: "../pages/docterSearch" }
   ];
 
   const expandableItems = [
@@ -115,7 +115,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6 items-center">
+          <div className="hidden lg:flex space-x-6 items-center">
             {box.map((item, index) => (
               <button
                 key={index}
@@ -136,7 +136,7 @@ const Header = () => {
               Chat
             </a>
           </div>
-          <FaBars className="text-3xl cursor-pointer md:hidden" onClick={showSideMenu} />
+          <FaBars className="text-3xl cursor-pointer lg:hidden" onClick={showSideMenu} />
         </div>
       </div>
     </div>

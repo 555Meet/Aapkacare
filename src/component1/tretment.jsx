@@ -3,7 +3,7 @@ import React from 'react';
 const Tretment = () => {
     return (
         <>
-        <div className="flex justify-center bg-blue-100 py-6 px-4 sm:px-10 lg:px-20">
+        <div className="flex justify-center bg-[#E4F4FD] py-6 px-4 sm:px-10 lg:px-20">
             <div className="flex flex-wrap md:flex-nowrap items-center p-6 max-w-full gap-6">
                 <div className="w-full md:w-1/3 flex justify-center">
                     <img src="/images/docter.png" alt="Doctor" className="rounded-lg h-[300px] md:h-[400px] w-auto" />

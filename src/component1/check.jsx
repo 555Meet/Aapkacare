@@ -1,26 +1,24 @@
 import React from 'react';
+import { CheckCircle } from 'lucide-react'; // Importing a check icon
+
 const features = [
-    { text: '30 Min Procedure', checked: true },
-    { text: 'Same Discharge', checked: true },
-    { text: 'No Cost EMI', checked: true },
-    { text: 'Free Pick Up & Drop', checked: true },
-    { text: 'Complete Insurance Support', checked: true }
-  ];
+    { text: '30 Min Procedure' },
+    { text: 'Same Discharge' },
+    { text: 'Free Pick Up & Drop' },
+    { text: 'Complete Insurance Support' }
+];
+
 const Check = () => {
     return (
-    <>
-    <div className="sm:flex flex-row space-x-4 p-4 bg-white rounded-lg">
-      {features.map((feature, index) => (
-        <div key={index} className="flex items-center">
-          <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-400 text-white">
-            {feature.checked ? '✔️' : '❌'}
-          </div>
-          <span className="ml-2">{feature.text}</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex items-center justify-center gap-6 p-4">
+            {features.map((feature, index) => (
+                <div key={index} className="flex items-center space-x-2">
+                    <CheckCircle className="text-blue-500 h-5 w-5" />
+                    <span className="text-gray-800 font-medium">{feature.text}</span>
+                </div>
+            ))}
         </div>
-      ))}
-    </div>  
-        </>
     );
-}
+};
 
 export default Check;

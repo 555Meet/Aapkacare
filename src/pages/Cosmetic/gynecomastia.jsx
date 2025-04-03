@@ -53,7 +53,7 @@ const Gynecomastia = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
+            <div className="max-w-7xl mx-auto p-6">
                 <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Gynecomastia Surgary in Pune </h1>
@@ -72,7 +72,7 @@ const Gynecomastia = () => {
                         <p className="text-gray-700">Gynecomastia is a medical condition characterized by the enlargement of breast tissue in males. It can occur in one or both breasts and often results in a more feminine appearance of the chest. Gynecomastia is relatively common and can affect males of all ages, from infants to adults.</p>
                     </div>
                     <div className="flex-1 flex justify-center mt-4 md:mt-0">
-                        <img src="/images/cosmetic/c-g-main.png" alt="Cataract illustration" className="w-[425px] h-[325px]"/>
+                        <img src="/images/cosmetic/c-g-main.png" alt="Cataract illustration" className="w-full md:w-[425px] h-auto" />
                     </div>
                 </section>
             </div>

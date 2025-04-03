@@ -9,7 +9,7 @@ const Form = () => {
   const [selectedCity, setSelectedCity] = useState("");
 
   return (
-    <div className="flex flex-col md:flex-row px-6 md:px-16 py-10 justify-evenly">
+    <div className="max-w-full flex flex-col md:flex-row px-6 md:px-10 pt-10 justify-evenly lg:gap-1 gap-10">
       {/* Left Section */}
       <div className="md:w-1/3 w-full space-y-4">
         <h2 className="text-2xl font-semibold text-center md:text-left">

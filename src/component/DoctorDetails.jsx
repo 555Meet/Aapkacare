@@ -61,16 +61,13 @@ const DoctorDetails = () => {
           />
           <div>
             <h1 className="text-xl sm:text-2xl font-bold">{doctor.name}</h1>
-            <p className="text-blue-600 text-sm sm:text-base">17+ Years Experience</p>
-            <p className="text-gray-600 text-sm sm:text-base">
-              MBBS, MD Medicine, DM Nephrology, DNB Nephrology | Nephrology
+            <p className="text-blue-600 text-sm sm:text-base">{doctor.experience}</p>
+            <p className="text-gray-600 text-sm sm:text-base">{doctor.degree}
             </p>
             <p className="text-gray-600 text-sm sm:text-base">English | Hindi</p>
-            <p className="text-blue-600 font-semibold text-sm sm:text-base">
-              Apollo Sage Hospitals
+            <p className="text-blue-600 font-semibold text-sm sm:text-base">{doctor.hospitalName}
             </p>
-            <p className="text-gray-500 text-sm sm:text-base">
-              E-8 Extension, Arera Colony, Bhopal, MP, 462026
+            <p className="text-gray-500 text-sm sm:text-base">{doctor.address}
             </p>
             <p className="text-green-600 font-bold">
             <s className="text-gray-400">{doctor.prices}</s> Free Booking
