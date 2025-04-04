@@ -150,39 +150,70 @@ const ACLTear = () => {
                     ))}
                 </div>
             </div>
-            <div className='container max-w-full'>
-                <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                    <div className='flex flex-col flex-1/2'>
-                        <h1 class="text-2xl font-bold mb-4">What Is A ACL Tear? </h1>
-                        <p class="text-md mb-4">A tear in the anterior cruciate ligament is known as ACL tear. It is one of the major ligaments in the knee. Athletes and women who wear high heels for long hours are likely to suffer from an ACL tear often. ACL tear is commonly witnessed in players related to soccer, football, cricket, basketball etc where sudden jumping, landing and other such body movements are required. The surgery to reconstruct a torn or injured ACL is known as ACL Reconstruction. 
-                        </p>
-                    </div>
-                    <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2" height="200" src="/images/orthopaedic/o-a-1.png"/>
-                </div>
-                <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row md:px-30 px-5 gap-10">
-                    <img alt="Surgeons" class="md:py-5 py-2 rounded-lg w-[500px] h-[450px] md:pt-12 pt-5" src="/images/docter.png"/>
-                    <div className='md:pr-10 pr-0 md:my-10 my-0'>
-                        <h1 class="text-3xl font-bold mb-4">Types of ACL Surgery </h1>
-                        <h2 className='text-xl font-bold mb-4'>Arthroscopic ACL Reconstruction </h2>
-                        <p className='mb-4'>This minimally invasive surgery involves using a tiny camera and small incisions to replace the torn ACL with a graft from another part of your body or a donor.</p>
-                        <h2 className='text-xl font-bold mb-4'>Open Surgery </h2>
-                        <p className='mb-4'>Open surgery may be required in rare cases where a larger incision is made to repair the damaged ACL.</p>
-                    </div>
-                </div>
-                <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                    <div>
-                        <h1 class="text-2xl font-bold mb-4">When to Treat an ACL Tear  </h1>
-                        <p class="text-md mb-4">It's essential to address an ACL tear promptly to prevent further damage. The treatment options may vary depending on the severity and your activity level. Aapkacare recommends seeking medical attention if you suspect an ACL tear, as the healthcare professional will assess your injury and recommend an appropriate course of action. </p>
-                        <h1 class="text-2xl font-bold mb-4">Treatment Options </h1>
-                        <ul className='list-disc pl-5 mb-4'>
-                            <li><span className='font-bold'>Non-Surgical Treatment: </span>Sometimes, a minor ACL tear can be managed without surgery. Physical therapy and rehabilitation exercises can help regain strength and stability in the knee over time. </li>
-                            <li><span className='font-bold'>Surgical Treatment: </span>Surgical intervention may be necessary for more severe ACL tears or individuals with high physical demands. Different types of surgery, such as arthroscopic ACL reconstruction, aim to repair the torn ligament. 
-                            </li>
-                        </ul>
-                    </div>
-                    <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2 h-[400px]" src="/images/laparoscopy/Gallbladder1-1.png"/>
-                </div>
-            </div>
+            <div className="container max-w-full">
+  {/* Section 1 - What Is An ACL Tear */}
+  <div className="bg-white w-full flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+    <div className="flex-1">
+      <h1 className="text-2xl md:text-3xl font-bold mb-4">What Is An ACL Tear?</h1>
+      <p className="text-md md:text-lg mb-4">
+        A tear in the anterior cruciate ligament is known as ACL tear. It is one of the major ligaments in the knee. Athletes and women who wear high heels for long hours are likely to suffer from an ACL tear often. ACL tear is commonly witnessed in players related to soccer, football, cricket, basketball etc where sudden jumping, landing and other such body movements are required. The surgery to reconstruct a torn or injured ACL is known as ACL Reconstruction.
+      </p>
+    </div>
+    <img
+      alt="ACL Reconstruction illustration"
+      className="rounded-lg w-full max-w-md md:max-w-[400px] md:p-4 p-2"
+      src="/images/orthopaedic/o-a-1.png"
+    />
+  </div>
+
+  {/* Section 2 - Types of ACL Surgery */}
+  <div className="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+    <img
+      alt="Doctor illustration"
+      className="rounded-lg w-full max-w-md md:max-w-[400px] md:pt-12 pt-5"
+      src="/images/docter.png"
+    />
+    <div className="flex-1 md:pr-10">
+      <h1 className="text-2xl md:text-3xl font-bold mb-4">Types of ACL Surgery</h1>
+
+      <h2 className="text-xl font-semibold mb-2">Arthroscopic ACL Reconstruction</h2>
+      <p className="mb-4">
+        This minimally invasive surgery involves using a tiny camera and small incisions to replace the torn ACL with a graft from another part of your body or a donor.
+      </p>
+
+      <h2 className="text-xl font-semibold mb-2">Open Surgery</h2>
+      <p className="mb-4">
+        Open surgery may be required in rare cases where a larger incision is made to repair the damaged ACL.
+      </p>
+    </div>
+  </div>
+
+  {/* Section 3 - When to Treat an ACL Tear */}
+  <div className="bg-white w-full flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+    <div className="flex-1">
+      <h1 className="text-2xl md:text-3xl font-bold mb-4">When to Treat an ACL Tear</h1>
+      <p className="text-md md:text-lg mb-4">
+        It's essential to address an ACL tear promptly to prevent further damage. The treatment options may vary depending on the severity and your activity level. Aapkacare recommends seeking medical attention if you suspect an ACL tear, as the healthcare professional will assess your injury and recommend an appropriate course of action.
+      </p>
+
+      <h1 className="text-2xl md:text-3xl font-bold mb-4">Treatment Options</h1>
+      <ul className="list-disc pl-5 mb-4 space-y-2">
+        <li>
+          <span className="font-bold">Non-Surgical Treatment:</span> Sometimes, a minor ACL tear can be managed without surgery. Physical therapy and rehabilitation exercises can help regain strength and stability in the knee over time.
+        </li>
+        <li>
+          <span className="font-bold">Surgical Treatment:</span> Surgical intervention may be necessary for more severe ACL tears or individuals with high physical demands. Different types of surgery, such as arthroscopic ACL reconstruction, aim to repair the torn ligament.
+        </li>
+      </ul>
+    </div>
+    <img
+      alt="Doctors treating ACL injury"
+      className="rounded-lg w-full max-w-md md:max-w-[400px] md:p-4 p-2 h-[300px] object-cover"
+      src="/images/laparoscopy/Gallbladder1-1.png"
+    />
+  </div>
+</div>
+
             <div className='max-w-full md:px-30 px-5 bg-[#E2F2FD] container mx-auto flex flex-col md:flex-row items-center md:items-start'>
                 <div className='w-full md:w-1/3 mt-0 md:my-10 md:ml-4'>
                     <img src="/images/orthopaedic/o-a-2.png" alt="photo" className='h-[325px] w-[500px] rounded'/>

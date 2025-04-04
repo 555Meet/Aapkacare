@@ -75,8 +75,8 @@ const LasikSurgery = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Lasik Surgery in Pune</h1>
                         <p className="text-gray-600 mt-2">Want to go through LASIK (Laser-Assisted in Situ Keratomileusis) surgery and have a clear vision at an affordable price with the best Lasik doctor in Mumbai? Get all kinds of LASIK consultations for your eye surgery. Here at Aapkacare Health we will provide the best Lasik surgeons and can restore your clear vision in 30 minutes via bladeless LASIK surgery at a reasonable price.
@@ -106,7 +106,7 @@ const LasikSurgery = () => {
                     ))}
                 </div>
             </div>
-            <div className="max-w-6xl mx-auto p-6 text-center">
+            <div className="max-w-7xl mx-auto p-6 text-center">
                 <h2 className="text-2xl font-bold">Understanding the Causes of Refractive Error</h2>
                 <p className="mt-2 text-gray-600">Refractive error is an eye condition that is caused by an irregular cornea. LASIK surgery is performed to correct the abnormal cornea. Here are the various causes of refractive error.</p>
                 <h3 className="mt-8 text-xl font-bold">Reasons to Get LASIK Surgery</h3>
