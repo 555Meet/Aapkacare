@@ -75,8 +75,8 @@ const KidneyStone = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Kidney stone Surgery in Pune </h1>
                         <p className="text-gray-600 mt-2">Kidney stones are one of the most painful health conditions that people experience. In India, 5 out of 10 people suffer from kidney stones. So, treating this medical condition has to be affordable and hassle-free. Here at Aapkacare Health, we will take off your kidney stone treatments. We will provide you with the best doctors and surgeons near you at an affordable price. For more information on your condition, book an appointment today and get the best treatment with Aapkacare Health. </p>

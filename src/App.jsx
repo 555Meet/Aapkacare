@@ -43,6 +43,7 @@ import DoctorList from './pages/DoctorList';
 import DoctorDetails from './component/DoctorDetails';
 import HospitalList from './pages/hostipalList';
 import HospDetails from './pages/hospDetails';
+import AppointmentForm from './pages/AppointmentForm';
 
 
 function App() {
@@ -73,7 +74,7 @@ function App() {
                 <Route path="/orthopaedic/knee-replacement" element={<KneeReplacement/>} />
                 <Route path="/orthopaedic/ACL-tear" element={<ACLTear/>} />
                 <Route path="/orthopaedic/Disc-injury" element={<DiscInjury/>} />
-                <Route path="/orthopaedic/join-replacement" element={<JoinReplacement/>} />
+                <Route path="/orthopaedic/joint-replacement" element={<JoinReplacement/>} />
                 <Route path="/orthopaedic/knee-arthroscopy" element={<KneeArthroscopy/>} />
                 <Route path="/orthopaedic/Rotator-cuff-repair" element={<RotatorCuffRepair/>} />
                 <Route path="/proctology/piles" element={<Piles/>} />
@@ -90,6 +91,7 @@ function App() {
                 <Route path='/doctor-details/:name' element={<DoctorDetails/>}/>
                 <Route path='/hospitalRecords' element={<HospitalList/>}/>
                 <Route path='/hospital-details' element={<HospDetails/>}/>
+                <Route path='/appointment' element={<AppointmentForm/>}/>
             </Routes>
             <FooterPune />
             <Footer />

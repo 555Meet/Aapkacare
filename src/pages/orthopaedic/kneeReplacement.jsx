@@ -9,8 +9,8 @@ const KneeReplacement = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Knee replacement surgery in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Knee replacement surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons  
@@ -63,7 +63,7 @@ const KneeReplacement = () => {
                     </ul>
                 </div>
             </div>
-            <div className='md:py-10 py-3 md:px-30 px-5 bg-white'>
+            <div className='md:py-10 py-3 md:px-20 px-5 bg-white'>
                     <h1 className="text-3xl font-bold mb-4">Best Surgery </h1>
                     <h2 className='text-md mb-4'>Our doctors at Aapkacare will conduct  through examination of your knee, including X-rays and other diagnostic tests, to evaluate the extent of damage. Depending on the severity, they will recommend either partial or total knee replacement.</h2>
                     <h1 className="text-3xl font-bold mb-4">During Surgery</h1>

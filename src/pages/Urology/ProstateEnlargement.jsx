@@ -84,8 +84,8 @@ const ProstateEnlargement = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Prostate Enlargement in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Prostate Enlargement surgery and have a healthy life at an affordable price with the best doctors in Mumbai? Get all kinds of BPH consultations for your eye surgery. Here at Aapkacare Health, we will provide the best urologists. </p>
@@ -134,9 +134,13 @@ const ProstateEnlargement = () => {
                     ))}
                 </div>
             </div>
-            <div className="bg-white w-full flex flex-col md:flex-row md:px-30 px-5 gap-3">
-                <img alt="Surgeons" className="rounded-lg w-[500px] h-[500px] md:pt-12 pt-5" src="/images/laparoscopy/Gallbladder1-3.png"/>
-                <div className='md:pr-10 pr-0 md:my-10 my-0'>
+
+            <div className="container max-w-full space-y-10">
+            <div className="bg-white w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing laparoscopic surgery" className="rounded-lg w-full max-w-[500px] p-2 md:p-6" src="/images/laparoscopy/Gallbladder1-3.png" />
+                    </div>
+                    <div className="w-full md:w-1/2">
                     <h1 className="text-2xl font-bold mb-4">Enlarged Prostate Treatment in Pune </h1>
                     <h3 className='text-xl font-bold mb-4'>Diagnosis of Benign prostatic hyperplasia (BPH): </h3>
                     <h2 className='text-md mb-4'>The diagnosis of Benign Prostatic Hyperplasia (BPH), also known as an enlarged prostate, typically involves a combination of medical history, physical examination, and various tests. Here are the steps involved in diagnosing BPH: </h2>
@@ -161,6 +165,7 @@ const ProstateEnlargement = () => {
                         <li className="mb-2"><span className="font-bold">Biopsy: </span>In rare cases, a prostate biopsy may be performed to rule out the possibility of prostate cancer, especially if the PSA levels are significantly elevated.
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
 
@@ -223,9 +228,13 @@ const ProstateEnlargement = () => {
                         </li>
                     </ul>
             </div>
-            <div class="bg-white w-full flex flex-col md:flex-row md:px-30 px-5 gap-23">
-                <img alt="Surgeons" class="rounded-lg w-[500px] h-[500px] md:pt-12 pt-5" src="/images/laparoscopy/Gallbladder1-3.png"/>
-                <div className='md:my-10 my-0'>
+
+            <div className="container max-w-full space-y-10">
+            <div className="bg-white w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing laparoscopic surgery" className="rounded-lg w-full max-w-[500px] p-2 md:p-6" src="/images/laparoscopy/Gallbladder1-3.png" />
+                    </div>
+                    <div className="w-full md:w-1/2">
                     <h1 class="text-3xl font-bold mb-4">What to prepare for BPH surgary? </h1>
                     <h3 className='font-bold mb-4'>Preparing for a diagnosis of Benign Prostatic Hyperplasia (BPH) or managing the condition effectively involves a combination of lifestyle modifications and proactive healthcare steps. Here are some ways to prepare for BPH or manage it if you've already been diagnosed: </h3>
                     <ul className="list-disc pl-5 mb-4">
@@ -238,6 +247,7 @@ const ProstateEnlargement = () => {
                         <li className="mb-2"><span>Ask Questions</span>Don't hesitate to ask your healthcare provider about your condition, available treatment options, potential side effects, and long-term outcomes. Aapkacare Health is here to answer all your questions regarding the treatment. Book an appointment for more information.
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
             <ReactUs/>

@@ -66,7 +66,11 @@ const HospDetails = () => {
 
     {/* Buttons */}
     <div className="flex flex-col sm:flex-row justify-between gap-3 mt-4">
-      <button className="bg-blue-500 text-white py-2 px-4 rounded w-full sm:w-auto">Book Appointment</button>
+      <Link
+        to={`/doctor-details/${encodeURIComponent(hospital.name)}`}
+      >
+        <button className="bg-blue-500 text-white py-2 px-4 rounded w-full sm:w-auto">Book Appointment</button>
+      </Link>
       <button onClick={() => {
         window.open('https://api.whatsapp.com/send/?phone=%2B919821527088&text=Hello%21&type=phone_number&app_absent=0');
         }} className="border border-green-500 text-green-600 px-4 py-2 rounded-md w-full sm:w-auto cursor-pointer">

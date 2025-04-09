@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaSearch } from "react-icons/fa"; // Import the search icon
+import { useNavigate } from "react-router-dom"; // ✅ Step 1
+import { FaSearch } from "react-icons/fa";
 
 const cities = ["Mumbai", "Noida", "Delhi", "Karimnagar", "Madhapur"];
 
@@ -7,6 +8,12 @@ const Form = () => {
   const [citySearch, setCitySearch] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedCity, setSelectedCity] = useState("");
+
+  const navigate = useNavigate(); // ✅ Step 2
+
+  const handleBookNow = () => {
+    navigate("/pages/docterSearch"); // ✅ Step 3: Navigate to the doctor search page
+  };
 
   return (
     <div className="max-w-full flex flex-col md:flex-row px-6 md:px-10 pt-10 justify-evenly lg:gap-1 gap-10">
@@ -17,7 +24,6 @@ const Form = () => {
         </h2>
         <p className="text-center md:text-left">AapkaCare Provide Top Doctors</p>
 
-        {/* Form Fields */}
         <label className="block">
           <input
             type="text"
@@ -81,8 +87,11 @@ const Form = () => {
           )}
         </div>
 
-        {/* Submit Button */}
-        <button className="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+        {/* ✅ Submit Button with navigation */}
+        <button
+          onClick={handleBookNow}
+          className="w-full p-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+        >
           Book Now
         </button>
       </div>

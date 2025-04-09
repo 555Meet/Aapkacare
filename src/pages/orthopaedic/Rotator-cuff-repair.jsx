@@ -89,8 +89,8 @@ const RotatorCuffRepair = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center md:mx-30 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">What is Kidney Transplant? Affordable Kidney Transplant in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Rotator Cuff surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of bariatric-related consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons. </p>
@@ -101,16 +101,14 @@ const RotatorCuffRepair = () => {
                         <BestSurgary/>
                     </div>
                 </section>
-            </div>
-            <div className='mx-auto p-6'>
-            <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center md:mx-30 mx-0">
-                    <div className="flex-1/2 ">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+                    <div className="flex-1 ">
                         <h2 className="text-2xl font-bold mb-2">What is Rotator Cuff Repair? </h2>
                         <p className="text-gray-700">Arthroscopic rotator cuff repair is a procedure for fixing a rotator cuff tear, from shaving bone spurs or repairing torn tendons and muscles in the shoulder. If the patient's injury extends beyond the rotator cuff, then the surgeon can perform modified rotator cuff surgery with bicep repair to correct the injury. </p>
                         <p className="text-gray-700">The rotator cuff comprises a group of muscles and tendons surrounding the shoulder joint. It is responsible for supporting the shoulder joint and keeping the head of the arm within the joint socket. Rotator cuff surgeries are performed for rotator cuff injuries. Rotator cuff damage is very common in people who have jobs that require repeated overhead motions or in athletes due to sudden jerking motions. </p>
                     </div>
-                    <div className="flex-1/2 flex justify-center mt-4 md:mt-0">
-                        <img src="/images/orthopaedic/o-r-main.png"alt="Cataract illustration"className="w-[450px] h-[300px]"/>
+                    <div className="flex-1 flex justify-center mt-4 md:mt-0">
+                        <img src="/images/orthopaedic/o-r-main.png" alt="Cataract illustration" className="w-[425px] h-[325px]"/>
                     </div>
                 </section>
             </div>
@@ -140,37 +138,45 @@ const RotatorCuffRepair = () => {
                     ))}
                 </div>
             </div>
-            <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row md:px-30 px-5 gap-3">
-                <div className='md:pr-10 pr-0 md:my-10 my-0'>
+
+
+
+            <div className="w-full bg-[#E2F2FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                    <img alt="Kidney surgery" className="rounded-lg w-[500px] p-2 md:p-6 h-[400px]" src="/images/orthopaedic/o-r-1.png"/>
+                    <div>
                     <h1 class="text-2xl font-bold mb-4">When to Seek Treatment </h1>
                     <h3 className='text-xl mb-4'>If you're experiencing any of these signs, it's essential to consult a healthcare professional, such as those at Aapkacare, to evaluate your condition. Early diagnosis and treatment can prevent further damage and improve overall quality of life. </h3>
                     <h1 class="text-2xl font-bold mb-4">Treatment Options </h1>
-                    <h3 className='text-xl mb-4'>The treatment of rotator cuff issues depends on the severity of the injury. Non-surgical approaches may include rest, physical therapy, and anti-inflammatory medications. However, for more severe cases, surgery may be necessary</h3>   
+                    <h3 className='text-xl mb-4'>The treatment of rotator cuff issues depends on the severity of the injury. Non-surgical approaches may include rest, physical therapy, and anti-inflammatory medications. However, for more severe cases, surgery may be necessary</h3>  
+                    </div>
                 </div>
-                <img alt="Surgeons" class="rounded-lg w-[500px] h-[500px] md:py-12 py-5" src="/images/orthopaedic/o-r-1.png"/>
+            </div>                
+            {/* Section 1 */}
+            <div className="bg-white w-full">
+                <section className="max-w-7xl mx-auto py-6 md:px-10 px-5 flex flex-col md:flex-row items-center">
+                    <div className="flex-1">
+                    <h1 class="text-2xl font-bold mb-4">How Rotator Cuff Repair Works </h1>
+                        <p class="text-md mb-4">During surgery, the torn tendon is reattached to the bone. Depending on the type of surgery, various techniques may be employed to ensure a stable and robust repair. Your healthcare provider will determine the surgery choice based on your injury's severity. </p>
+                    </div>
+                    <div className="flex-1 flex justify-center mt-4 md:mt-0">
+                        <img src="/images/orthopaedic/o-r-2.png" alt="Cataract illustration" className="w-[525px] h-[325px]" />
+                    </div>
+                </section>
             </div>
 
-            <div className='max-w-full bg-white h-5'></div>
-            
-            <div className='container max-w-full'>
-                    <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2 h-[400px]" src="/images/orthopaedic/o-r-2.png"/>
-                        <div>
-                        <h1 class="text-2xl font-bold mb-4">How Rotator Cuff Repair Works </h1>
-                        <p class="text-md mb-4">During surgery, the torn tendon is reattached to the bone. Depending on the type of surgery, various techniques may be employed to ensure a stable and robust repair. Your healthcare provider will determine the surgery choice based on your injury's severity. </p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <div className='md:py-10 py-3'>
-                            <h2 class="text-2xl font-bold mb-4">After Treatment </h2>
-                            <p class="text-lg">Following rotator cuff repair surgery, rehabilitation is crucial to regain strength and range of motion in your shoulder. Your healthcare team will provide a tailored plan to guide you through recovery. 
+            {/* Section 2 - Kidney Benefits */}
+            <div className="w-full bg-[#E2F2FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                    <img alt="Kidney surgery" className="rounded-lg w-[500px] p-2 md:p-6 h-[400px]" src="/images/orthopaedic/o-r-3.png"/>
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">After Treatment </h2>
+                        <p class="text-lg">Following rotator cuff repair surgery, rehabilitation is crucial to regain strength and range of motion in your shoulder. Your healthcare team will provide a tailored plan to guide you through recovery. 
                             </p>
-                        </div>
-                        <img alt="Surgeons performing laparoscopic surgery" class="mb-4 md:mb-0 md:mr-6 rounded-lg w-[500px] md:p-6 p-2" height="300" src="/images/orthopaedic/o-r-3.png"/>
                     </div>
-
-                    <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3 py-5">
+                </div>
+            </div>
+            <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3 py-5">
                         <div className='flex flex-col flex-1/2'>
                         <h1 class="text-2xl font-bold mb-4">What happens during knee arthroscopy? </h1>
                         <p class="text-md mb-4">Before the surgery, the orthopaedic surgeon will perform a thorough diagnosis. Diagnosis before knee arthroscopy entails physical examination, along with imaging tests like X-rays, shoulder CT scans, MRI, etc. 
@@ -183,27 +189,30 @@ const RotatorCuffRepair = () => {
                         </p>
                         </div>
                     </div>
-                    <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing laparoscopic surgery" class="mb-4 md:mb-0 md:mr-6 rounded-lg w-[500px] md:p-6 p-2" height="300" src="/images/laparoscopy/Gallbladder1-2.png"/>
-                        <div className='md:py-10 py-3'>
-                            <h2 class="text-2xl font-bold mb-4">Risks of delayed Kidney Transplant </h2>
-                            <p class="text-lg">If a patient suffering from an end-stage renal disease delays a kidney transplant, it can cause life-threatening complications. The common risks of delayed kidney transplant are: 
-                            </p>
-                            <ul className='list-disc pl-5 mb-4'>
-                                <li>Anaemia </li>
-                                <li>Bone weakness </li>
-                                <li>Fluid retention </li>
-                                <li>Heart disease </li>
-                                <li>Hyperkalemia </li>
-                                <li>Urinary tract obstruction </li>
-                                <li>Blood toxicity </li>
-                                <li>Uncontrolled systemic disease (heart or liver disease) </li>
-                                <li>Multiple organ failure </li>
-                                <li>Death</li>
-                            </ul>
-                        </div>
+            {/* Section 3 - Risks of Kidney Transplant */}
+            <div className="bg-[#E2F2FD] w-full">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                    <img alt="Laparoscopic surgery" className="rounded-lg w-[500px] md:p-6 p-2 mb-4 md:mb-0" src="/images/laparoscopy/Gallbladder1-2.png"/>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">Risks of delayed Kidney Transplant </h2>
+                        <p class="text-lg">If a patient suffering from an end-stage renal disease delays a kidney transplant, it can cause life-threatening complications. The common risks of delayed kidney transplant are: 
+                        </p>
+                        <ul className='list-disc pl-5 mb-4'>
+                            <li>Anaemia </li>
+                            <li>Bone weakness </li>
+                            <li>Fluid retention </li>
+                            <li>Heart disease </li>
+                            <li>Hyperkalemia </li>
+                            <li>Urinary tract obstruction </li>
+                            <li>Blood toxicity </li>
+                            <li>Uncontrolled systemic disease (heart or liver disease) </li>
+                            <li>Multiple organ failure </li>
+                            <li>Death</li>
+                        </ul>
                     </div>
+                </div>
             </div>
+
             <div className="w-full max-w-3xl md:mx-14 mx-auto p-4">
                 <h1 class="text-3xl font-bold mb-4">Types of Surgery </h1>
                 <p class="text-lg mb-4">There are several surgical procedures available for rotator cuff repair, including: </p>

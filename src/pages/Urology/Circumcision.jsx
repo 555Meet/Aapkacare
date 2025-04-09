@@ -87,8 +87,8 @@ const Circumcision = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Circumcision Surgery in Pune </h1>
                         <p className="text-gray-600 mt-2">New studies and cultural shifts have encouraged us to take a deeper look at the practice of circumcision in recent decades. Dedicated to providing hassle-free laser circumcision surgery at the best facilities with individualised care, Aapkacare Health is a patient-centered, technology-driven healthcare service provider. Meet with Aapkacare Health's skilled surgeons and opt for a highly advanced circumcision surgery at affordable rates. </p>
@@ -136,19 +136,19 @@ const Circumcision = () => {
             </div>
 
             <div className="bg-[#E4F4FD]">
-                <div className="max-w-full mx-auto p-6 bg-[#E4F4FD] flex flex-col md:flex-row items-center">
+                <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
                     {/* Left Image Section */}
-                    <div className="w-full md:pl-30 pl-0 md:w-1/2">
-                        <img alt="A female doctor in a white coat holding a clipboard and smiling"height="400"src="https://storage.googleapis.com/a1aa/image/vKxrjoV05YQbK2x7eC8iuVF-iU-cPKH8TYa38LVdtFg.jpg"width="400"/>
+                    <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
+                        <img alt="A female doctor in a white coat holding" className='w-[300px] md:w-[400px] h-auto' src="https://storage.googleapis.com/a1aa/image/vKxrjoV05YQbK2x7eC8iuVF-iU-cPKH8TYa38LVdtFg.jpg"/>
                     </div>
 
                     {/* Right Content Section */}
-                    <div className="w-full md:w-1/2 mt-6 md:mt-0 md:mr-50 mr-0">
+                    <div className="w-full md:w-1/2 md:pl-12">
 
                         {/* Tabs */}
-                        <div className="flex space-x-4 mt-4">
+                        <div className="flex flex-wrap gap-2 mb-4">
                             {Object.keys(content).map((key) => (
-                            <button key={key} className={`px-6 py-2 rounded-full text-white font-semibold transition-all ${selectedTab === key ? "bg-green-500" : "bg-gray-500"}`}
+                            <button key={key} className={`px-5 py-2 rounded-full text-white font-semibold transition-all duration-300${selectedTab === key ? "bg-green-500" : "bg-gray-500"}`}
                             onClick={() => setSelectedTab(key)}>
                                 {key.charAt(0).toUpperCase() + key.slice(1)}
                             </button>

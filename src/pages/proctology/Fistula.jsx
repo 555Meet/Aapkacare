@@ -6,9 +6,9 @@ import LastImages from '../../component1/last-images';
 import Check from '../../component1/check';
 import BestSurgary from '../../component1/best-surgary';
 import ReasonCard from '../../component1/ReasonCard';
-import FAQFistula from "../../component1/FAQFistula";
+import FAQfistula from "../../component1/FAQfistula";
 
-const Fistula = () => {
+const fistula = () => {
     const [openIndex, setOpenIndex] = useState(null);
 
     const faqs = [
@@ -81,30 +81,34 @@ const Fistula = () => {
     return (
         <div>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" py-6 rounded-lg flex flex-col md:flex-row md:mx-20 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
-                        <h1 className="text-3xl font-bold">Laser Surgery for Fistula in Pune</h1>
-                        <p className="text-gray-600 mt-2">Want to go through Laser Fistula surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons </p>
+                        <h1 className="text-3xl font-bold">Laser Surgery for fistula in Pune</h1>
+                        <p className="text-gray-600 mt-2">Want to go through Laser fistula surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons </p>
                         <Check/>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 text-blue-600 mt-4 md:mt-0">
                         <BestSurgary/>
                     </div>
                 </section>
-
-                <section className="py-6 rounded-lg flex flex-col md:flex-row items-center md:px-25 px-5">
+      
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
                     <div className="flex-1 ">
-                        <h2 className="text-2xl font-bold mb-2">What is an Anal Fistula? </h2>
+                        <h2 className="text-2xl font-bold mb-2">What is an Anal fistula? </h2>
                         <p className="text-gray-700">A fistula is an abnormal connection or passageway between two organs or vessels within the body. In. fistula surgery, we primarily focus on anorectal fistulas, which connect the anal canal to the skin near the anus. </p>
                     </div>
-                    <div className=" flex justify-center mt-4 md:mt-0">
-                        <img src="/images/proctology/p-f-main.png"alt="Cataract illustration"className="w-[425px] h-[325px]"/>
+                    <div className="flex-1 flex justify-center mt-4 md:mt-0">
+                        <img
+                            src="/images/proctology/p-f-main.png"
+                            alt="Cataract illustration"
+                            className="w-[625px] h-[325px]"
+                        />
                     </div>
                 </section>
             </div>
             <div className="max-w-full mx-auto p-6 bg-[#E2F2FD] md:px-30 px-0 rounded-lg">
-                <h2 className="text-center text-3xl font-bold mb-2">Identify the Signs of Fistula </h2>
+                <h2 className="text-center text-3xl font-bold mb-2">Identify the Signs of fistula </h2>
                 <p className='text-center text-xl mb-6'>Common signs of anorectal fistulas include </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-1 gap-6 text-center">
                     {reasons.slice(0, 3).map((reason, index) => (
@@ -113,7 +117,7 @@ const Fistula = () => {
                 </div>
             </div>
             <div className="max-w-full mx-auto p-6 bg-white rounded-lg">
-                <h1 className="text-center text-3xl font-bold mb-6">Understand the Causes of Fistula </h1>
+                <h1 className="text-center text-3xl font-bold mb-6">Understand the Causes of fistula </h1>
                 <p className="text-center text-xl mb-6 ">A majority of anal fistulas occur due to an infection that starts in an anal gland. This infection forms an abscess that either drains on its own or is drained surgically through the skin next to the anus 
                 </p>
                 <div className="grid md:grid-cols-3 grid-cols-1 md:grid-rows-2 grid-rows-1 gap-6 text-center md:px-30 px-auto">
@@ -130,7 +134,7 @@ const Fistula = () => {
             <div className='container mx-auto flex flex-col md:flex-row items-center md:items-start'>
                 <div className='flex flex-1/2 rounded-lg p-4'>
                     <div className="w-full max-w-3xl md:mx-14 mx-auto p-4">
-                    <h1 className="font-bold text-3xl mb-4">Different kinds of Fistula</h1>
+                    <h1 className="font-bold text-3xl mb-4">Different kinds of fistula</h1>
                         {faqs.map((faq, index) => (
                             <div key={index} className="border border-gray-300 rounded-lg mb-2">
                                 <button
@@ -164,16 +168,18 @@ const Fistula = () => {
 
             <div className='bg-[#E2F2FD] mx-auto flex flex-col md:flex-row items-center md:items-start'>
                 <div className='flex flex-1/2 rounded-lg p-4'>
-                    <FAQFistula/>
+                    <FAQfistula/>
                 </div>
                 <div className='w-full md:w-1/3 mt-0 md:mt-8 md:ml-4'>
                     <img src="/images/proctology/p-2f-1.png" alt="photo" className='h-[325px] w-[500px] rounded'/>
                 </div>
             </div>
-            <div className='container max-w-full'>
-                <div class="bg-white w-full flex flex-col md:flex-row md:px-30 px-5 gap-10">
-                    <div className='flex flex-col justify-center'>
-                        <h1 class="text-3xl font-bold mb-4">Preventing Fistulas </h1>
+
+
+            <div className="w-full bg-white">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:px-10 px-5 py-6">
+                    <div className="flex flex-col justify-center flex-1">
+                        <h1 class="text-3xl font-bold mb-4">Preventing fistulas </h1>
                         <ul className='mb-2'>
                             <li><span className='font-bold'>Maintaining Good Hygiene: </span>Regular cleaning of the anal area is essential to prevent infections that can lead to fistulas. </li>
                             <li><span className='font-bold'>Dietary and Lifestyle Factors:</span>A healthy diet and lifestyle can reduce the risk of conditions that may cause fistulas, such as Crohn's disease or diverticulitis.  </li>
@@ -181,7 +187,13 @@ const Fistula = () => {
                         </ul>
                         <p>Knowledge is your greatest ally whether you are considering treatment options or seeking to prevent fistulas. For personalized advice and treatment, consult a healthcare professional or visit Aapkacare for expert guidance and support.</p>
                     </div>
-                    <img alt="Surgeons" class="md:py-5 py-2 rounded-lg w-[700px] h-[450px] md:pt-12 pt-5" src="/images/proctology/p-2f-2.png"/>
+                    <div className="flex justify-center flex-1">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-[400px] h-[350px] object-cover"
+                            src="/images/proctology/p-2f-2.png"
+                        />
+                    </div>
                 </div>
             </div>
             <ReactUs/>
@@ -190,4 +202,4 @@ const Fistula = () => {
     );
 }
 
-export default Fistula;
+export default fistula;

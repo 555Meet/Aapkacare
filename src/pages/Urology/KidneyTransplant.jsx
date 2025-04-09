@@ -82,8 +82,8 @@ const KidneyTransplant = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center md:mx-30 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">What is Kidney Transplant? Affordable Kidney Transplant in Pune </h1>
                         <p className="text-gray-600 mt-2">Welcome to Aapkacare's comprehensive guide on kidney replacement. In this article, we'll cover all aspects of kidney replacement, including treatment options, signs indicating the need for surgery, the surgical procedures involved, and the benefits of undergoing this life-changing treatment.</p>
@@ -113,8 +113,8 @@ const KidneyTransplant = () => {
                     </table>
                 </div>
             </div>  
-            <div className='mx-auto p-6'>
-            <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center md:mx-30 mx-0">
+            <div className='mx-auto p-6 max-w-7xl'>
+            <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className="flex-1/3 ">
                         <h2 className="text-2xl font-bold mb-2">Overview</h2>
                         <p className="text-gray-700">A Kidney Transplant is a surgical method in which a healthy kidney is transplanted in patients suffering from an end-stage renal disease with irreversible kidney damage. This procedure is also known as Renal Transplantation. The kidney transplant is a major and complex procedure that takes about 3 to 5 hours to complete and is performed under general anaesthesia. The procedure has a high success rate.</p>
@@ -152,11 +152,14 @@ const KidneyTransplant = () => {
                 </div>
             </div>
 
-            <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row md:px-30 px-5 gap-3">
-                <img alt="Surgeons" class="rounded-lg w-[500px] h-[500px] md:pt-12 pt-5" src="/images/laparoscopy/Gallbladder1-3.png"/>
-                <div className='md:pr-10 pr-0 md:my-10 my-0'>
-                    <h1 class="text-2xl font-bold mb-4">What to expect before and on the day of Kidney Transplant surgery? </h1>
-                    <h3 className='font-bold mb-4'>The donor needs to register himself/herself for donating his/her organs. The donor may choose to donate organs, such as eyes, kidneys, or liver, before or after his/her death. </h3>
+            <div className="container max-w-full space-y-10">
+                <div className="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing laparoscopic surgery" className="rounded-lg w-full max-w-[500px] h-[500px] p-2 md:p-6" src="/images/laparoscopy/Gallbladder1-3.png" />
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <h2 className="text-2xl font-bold mb-4 text-gray-800">What to expect before and on the day of Kidney Transplant surgery? </h2>
+                        <h3 className='font-bold mb-4'>The donor needs to register himself/herself for donating his/her organs. The donor may choose to donate organs, such as eyes, kidneys, or liver, before or after his/her death. </h3>
                     <h2 className='text-xl font-bold mb-4'>Before the Kidney Transplant </h2>
                     <p className='mb-4'>Before the surgery, the patient is evaluated by a transplant centre team. Tests are done to ensure that the patient is healthy enough to undergo transplant surgery. The following tests are done before surgery: </p>
                     <ul class="list-disc pl-5 mb-4">
@@ -181,8 +184,10 @@ const KidneyTransplant = () => {
                         <li className='mb-2'>The patient's blood pressure, breathing rate, and heart rate are also monitored before starting the procedure. </li>
                         <li>The patient will then be shifted to the operation theatre.</li>
                     </ul>
+                    </div>
                 </div>
             </div>
+
             <div className='container mx-auto flex flex-col md:flex-row items-center md:items-start'>
                 <div className='flex flex-1/2 rounded-lg p-4'>
                     <FAQUrology/>
@@ -192,10 +197,11 @@ const KidneyTransplant = () => {
                 </div>
             </div>
 
-            <div className='container max-w-full'>
-                    <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <div>
-                        <h1 class="text-2xl font-bold mb-4">Benefits of Kidney Transplant </h1>
+            <div className="container max-w-full space-y-10">
+            {/* Section 1 */}
+                <div className="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2">
+                    <h1 class="text-2xl font-bold mb-4">Benefits of Kidney Transplant </h1>
                         <p class="text-md mb-4">A kidney transplant is generally the best treatment for kidney failure in a patient who fits the transplantation procedure. A successful kidney transplant procedure provides several benefits such as: </p>
                         <ul className='list-disc pl-5 mb-4'>
                             <li>Increases life expectancy or survival rate </li>
@@ -206,14 +212,19 @@ const KidneyTransplant = () => {
                             <li>Helps improve sex life and fertility </li>
                             <li>Allows to resume daily activities</li>
                         </ul>
-                        </div>
-                        <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2 h-[400px]" src="/images/laparoscopy/Gallbladder1-1.png"/>
                     </div>
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing a cholecystectomy" className="rounded-lg w-full max-w-[400px] p-2 md:p-6" src="/images/laparoscopy/Gallbladder1-1.png" />
+                    </div>
+                </div>
 
-                    <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing laparoscopic surgery" class="mb-4 md:mb-0 md:mr-6 rounded-lg w-[500px] md:p-6 p-2" height="300" src="/images/laparoscopy/Gallbladder1-2.png"/>
-                        <div className='md:py-10 py-3'>
-                            <h2 class="text-2xl font-bold mb-4">Risks and complication of Kidney Transplant </h2>
+            {/* Section 2 */}
+                <div className="bg-white w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing laparoscopic surgery" className="rounded-lg w-full max-w-[500px] p-2 md:p-6" src="/images/laparoscopy/Gallbladder1-2.png" />
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <h2 class="text-2xl font-bold mb-4">Risks and complication of Kidney Transplant </h2>
                             <p class="text-lg">A kidney transplant is a major and complex procedure that can cause problems for some patients. The main risks and complications of kidney transplant include: 
                             </p>
                             <ul className='list-disc pl-5 mb-4'>
@@ -228,13 +239,14 @@ const KidneyTransplant = () => {
                                 <li>failure of the donated kidney </li>
                                 <li>a heart attack </li>
                                 <li>a stroke</li>
-                        </ul>
-                        </div>
+                            </ul>
                     </div>
+                </div>
 
-                    <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <div className='flex flex-col flex-1/2'>
-                        <h1 class="text-2xl font-bold mb-4">When is consultation with the doctor needed? </h1>
+            {/* Section 3 */}
+                <div className="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2">
+                    <h1 class="text-2xl font-bold mb-4">When is consultation with the doctor needed? </h1>
                         <p class="text-md mb-4">The patient can visit the doctor if he/she is facing any kind of discomfort, such as: 
                         </p>
                         <ul className='list-disc pl-5 mb-4'>
@@ -243,13 +255,26 @@ const KidneyTransplant = () => {
                             <li>Infection in the incision area</li> 
                             <li>Bleeding </li>
                         </ul>
-                        </div>
-                        <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2" height="200" src="/images/laparoscopy/Gallbladder1-4.png"/>
                     </div>
-                    <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing laparoscopic surgery" class="mb-4 md:mb-0 md:mr-6 rounded-lg w-[500px] md:p-6 p-2" height="300" src="/images/laparoscopy/Gallbladder1-2.png"/>
-                        <div className='md:py-10 py-3'>
-                            <h2 class="text-2xl font-bold mb-4">Risks of delayed Kidney Transplant </h2>
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing a cholecystectomy" className="rounded-lg w-full max-w-[400px] p-2 md:p-6" src="/images/laparoscopy/Gallbladder1-4.png" />
+                    </div>
+                </div>
+            </div>
+            <div className="bg-white w-full px-5 md:px-20 py-8">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                {/* Left Image Section */}
+                    <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-full max-w-[500px] h-auto"
+                            src="/images/laparoscopy/Gallbladder1-2.png"
+                        />
+                    </div>
+
+                {/* Right Content Section */}
+                    <div className="w-full md:w-1/2">
+                    <h2 class="text-2xl font-bold mb-4">Risks of delayed Kidney Transplant </h2>
                             <p class="text-lg">If a patient suffering from an end-stage renal disease delays a kidney transplant, it can cause life-threatening complications. The common risks of delayed kidney transplant are: 
                             </p>
                             <ul className='list-disc pl-5 mb-4'>
@@ -264,8 +289,8 @@ const KidneyTransplant = () => {
                                 <li>Multiple organ failure </li>
                                 <li>Death</li>
                             </ul>
-                        </div>
                     </div>
+                </div>
             </div>
             <ReactUs/>
             <LastImages/>       

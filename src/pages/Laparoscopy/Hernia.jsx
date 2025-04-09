@@ -157,20 +157,20 @@ const Hernia = () => {
             </div>
 
             <div className="bg-[#E4F4FD]">
-                <div className="max-w-full mx-auto p-6 bg-[#E4F4FD] flex flex-col md:flex-row items-center">
+                <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
                     {/* Left Image Section */}
-                    <div className="w-full md:pl-30 pl-0 md:w-1/2">
-                        <img alt="A female doctor in a white coat holding a clipboard and smiling" height="400" src="https://storage.googleapis.com/a1aa/image/vKxrjoV05YQbK2x7eC8iuVF-iU-cPKH8TYa38LVdtFg.jpg"width="400"/>
+                    <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
+                        <img alt="A female doctor in a white coat holding a clipboard and smiling"className='w-[300px] md:w-[400px] h-auto' src="https://storage.googleapis.com/a1aa/image/vKxrjoV05YQbK2x7eC8iuVF-iU-cPKH8TYa38LVdtFg.jpg"/>
                     </div>
 
                     {/* Right Content Section */}
-                    <div className="w-full md:w-1/2 mt-6 md:mt-0 md:mr-50 mr-0">
-                        <h1 className="text-2xl font-bold text-gray-800">OUR EXPERTS EXPLAIN</h1>
+                    <div className="w-full md:w-1/2 md:pl-12">
+                        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">OUR EXPERTS EXPLAIN</h1>
 
                         {/* Tabs */}
-                        <div className="flex space-x-4 mt-4">
+                        <div className="flex flex-wrap gap-2 mb-4">
                             {Object.keys(content).map((key) => (
-                            <button key={key} className={`px-6 py-2 rounded-full text-white font-semibold transition-all ${selectedTab === key ? "bg-green-500" : "bg-gray-500"}`}
+                            <button key={key} className={`px-5 py-2 rounded-full text-white font-semibold transition-all duration-300 ${selectedTab === key ? "bg-green-500" : "bg-gray-500"}`}
                             onClick={() => setSelectedTab(key)}>
                                 {key.charAt(0).toUpperCase() + key.slice(1)}
                             </button>

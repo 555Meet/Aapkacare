@@ -78,8 +78,8 @@ const VaricoseVein = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" py-6 rounded-lg flex flex-col md:flex-row md:mx-20 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Treatment For Varicose Vein in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Varicose Vein surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons </p>
@@ -89,25 +89,34 @@ const VaricoseVein = () => {
                         <BestSurgary/>
                     </div>
                 </section>
-            </div>
-
-            <div className="mx-auto">
-                <section className="py-6 rounded-lg flex flex-col md:flex-row items-center md:px-25 px-5 bg-white">
+      
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
                     <div className="flex-1 ">
                         <h2 className="text-2xl font-bold mb-2">What are Varicose Veins? </h2>
                         <p className="text-gray-700">Varicose veins are enlarged, twisted veins that often appear as blue or purple cords on the legs. They develop when the valves within the veins weaken or become damaged, leading to poor blood circulation. As a result, blood pools in the veins, causing them to swell and become visible through the skin.</p>
                     </div>
-                    <div className=" flex justify-center mt-4 md:mt-0">
-                        <img src="/images/vascular/vv-main.png"alt="Cataract illustration"className="w-[425px] h-[325px]"/>
+                    <div className="flex-1 flex justify-center mt-4 md:mt-0">
+                        <img
+                            src="/images/vascular/vv-main.png"
+                            alt="Cataract illustration"
+                            className="w-[625px] h-[325px]"
+                        />
                     </div>
                 </section>
             </div>
 
-            <div className="container max-w-full">
-                <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-10">
-                        <img alt="Surgeons performing laparoscopic surgery" class="rounded-lg w-[575px] h-[500px] py-5" src="/images/vascular/vv-v-1.png"/>
-                        <div className=''>
-                            <h2 class="text-2xl font-bold mb-4">Avoiding Varicose Veins </h2>
+
+            <div className="w-full bg-[#E4F4FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:px-10 px-5 py-6">
+                    <div className="flex justify-center flex-1">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-[400px] h-[350px] object-cover"
+                            src="/images/proctology/p-2f-2.png"
+                        />
+                    </div>
+                    <div className="flex flex-col justify-center flex-1">
+                    <h2 class="text-2xl font-bold mb-4">Avoiding Varicose Veins </h2>
                             <p class="text-lg mb-2">Preventing varicose veins involves lifestyle modifications and healthy habits. Here are some tips to help you reduce your risk of developing varicose veins:  
                             </p>
                             <p className="mb-2">- Maintain a healthy weight and stay physically active. </p>
@@ -115,9 +124,10 @@ const VaricoseVein = () => {
                             <p className="mb-2">- Avoid prolonged periods of sitting or standing. </p>
                             <p className="mb-2">- Wear compression stockings as recommended by your doctor. </p>
                             <p className="mb-2">- Follow a balanced diet rich in fiber and low in salt to improve circulation.</p>
-                        </div>
+                    </div>
                 </div>
             </div>
+
       
             <div className="max-w-full mx-auto p-6 bg-white md:px-30 px-0 rounded-lg">
                 <h2 className="text-center text-3xl font-bold mb-6">Understand the Causes of Varicose Vein </h2>
@@ -130,19 +140,26 @@ const VaricoseVein = () => {
                 <p className="text-xl mb-4">If you're unsure whether you have varicose veins, here are some common signs and symptoms to watch out for: </p>
             </div>  
 
-            <div className="container max-w-full">
-                <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-10">
-                        <div className=''>
-                            <h2 class="text-2xl font-bold mb-4">After Treatment </h2>
-                            <p class="text-lg mb-2">Following varicose vein treatment at Aapkacare, patients can look forward to a significant improvement in their quality of life. Recovery times vary depending on the chosen procedure, but our dedicated medical team will provide you with post-treatment care instructions and monitor your progress. 
-                            </p>
-                            <p className="mb-2">Remember, seeking timely treatment for varicose veins can help alleviate discomfort and reduce the risk of complications. Let Aapkacare's expert doctors guide you towards healthier, pain-free legs. </p>
-                            <p className="mb-2">If you have concerns about varicose veins, don't hesitate to reach out to our medical professionals at Aapkacare. We are here to assist you on your journey to healthier, more comfortable legs. </p>
-                            <p className="mb-2">For more information or to schedule a consultation, contact Aapkacare today.</p>
-                        </div>
-                        <img alt="Surgeons performing laparoscopic surgery" class="rounded-lg w-[575px] h-[500px] py-5" src="/images/vascular/vv-v-1.png"/>
+
+            <div className="w-full bg-[#E4F4FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:px-10 px-5 py-6">
+                    <div className="flex flex-col justify-center flex-1">
+                        <h2 class="text-2xl font-bold mb-4">After Treatment </h2>
+                        <p class="text-lg mb-2">Following varicose vein treatment at Aapkacare, patients can look forward to a significant improvement in their quality of life. Recovery times vary depending on the chosen procedure, but our dedicated medical team will provide you with post-treatment care instructions and monitor your progress. 
+                        </p>
+                        <p className="mb-2">Remember, seeking timely treatment for varicose veins can help alleviate discomfort and reduce the risk of complications. Let Aapkacare's expert doctors guide you towards healthier, pain-free legs. </p>
+                        <p className="mb-2">If you have concerns about varicose veins, don't hesitate to reach out to our medical professionals at Aapkacare. We are here to assist you on your journey to healthier, more comfortable legs. </p>
+                        <p className="mb-2">For more information or to schedule a consultation, contact Aapkacare today.</p>
+                    </div>
+                    <div className="flex justify-center flex-1">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-[400px] h-[350px] object-cover"
+                            src="/images/proctology/p-2f-2.png"
+                        />
+                    </div>
                 </div>
-            </div>   
+            </div>
 
             <div className='container mx-auto flex flex-col md:flex-row items-center md:items-start'>
                 <div className='w-full md:w-1/3 mt-0 md:mt-8 md:ml-4'>
@@ -179,26 +196,34 @@ const VaricoseVein = () => {
                 </div>
             </div>
 
-            <div className="container max-w-full">
-                <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <div className=''>
-                            <h2 class="text-2xl font-bold mb-4">Treatment Options </h2>
-                            <p class="text-lg">At Aapkacare, we offer a range of advanced surgical and non-surgical treatment options to address varicose veins. Surgical procedures, including vein stripping or laser ablation, can effectively remove or close off damaged veins. Our experienced doctors will evaluate your condition and recommend the most suitable treatment for your specific case.
-                            </p>
-                        </div>
-                        <img alt="Surgeons performing laparoscopic surgery" class="rounded-lg w-[450px] h-[400px] py-5" src="/images/docter.png"/>
+
+            <div className="w-full bg-[#E4F4FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:px-10 px-5 py-6">
+                    <div className="flex flex-col justify-center flex-1">
+                        <h2 class="text-2xl font-bold mb-4">Treatment Options </h2>
+                        <p class="text-lg">At Aapkacare, we offer a range of advanced surgical and non-surgical treatment options to address varicose veins. Surgical procedures, including vein stripping or laser ablation, can effectively remove or close off damaged veins. Our experienced doctors will evaluate your condition and recommend the most suitable treatment for your specific case.
+                        </p>
                     </div>
+                    <div className="flex justify-center flex-1">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-[400px] h-[350px] object-cover"
+                            src="/images/docter.png"
+                        />
+                    </div>
+                </div>
             </div>
 
-            <div className='bg-white mx-auto flex flex-col md:flex-row items-center md:items-start'>
-                <div className='flex flex-1/2 rounded-lg p-4 flex-col'>
+            <div className="mx-auto p-6 max-w-full bg-white">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-15 max-w-7xl">
+                    <div className=" flex-1 w-full md:w-1/2 ">
                     <FAQvascular/>
-                </div>
-                <div className='w-full md:w-1/3 mt-0 md:ml-4'>
-                    <img src="/images/vascular/vv-v-3.png" alt="photo" className='h-[325px] w-[400px] rounded'/>
-                </div>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-4 text-blue-600 mt-4 md:mt-0">
+                        <img src="/images/vascular/vv-v-3.png" alt="photo" className='h-[325px] w-[500px] rounded'/>
+                    </div>
+                </section>
             </div>
-            <div className="h-5 bg-white"></div>
             <ReactUs/>
             <LastImages/>
         </>

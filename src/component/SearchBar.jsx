@@ -3,7 +3,7 @@ const SearchBar = ({ search, setSearch }) => {
     <input
       type="text"
       placeholder="Search..."
-      className="border p-2 md:w-7xl w-full mb-4 rounded md:mx-14 mx-auto"
+      className="w-full max-w-full px-4 py-2 border border-gray-700 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-base mb-4"
       value={search}
       onChange={(e) => {
         setSearch(e.target.value);

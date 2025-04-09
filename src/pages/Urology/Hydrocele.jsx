@@ -85,8 +85,8 @@ const Hydrocele = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center md:mx-20 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Hydrocole Treatment in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Hydrocele surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of bariatric-related consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons. Welcome to Aapkacare's comprehensive guide on Hydrocele a condition affecting the male reproductive system. We'll explore the causes, signs, treatment options, and surgery for Hydrocele. Understanding this condition is crucial to making informed decisions about when and how to treat it and the benefits of surgery. </p>
@@ -97,7 +97,7 @@ const Hydrocele = () => {
                     </div>
                 </section>
       
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center md:mx-20 mx-0">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
                     <div className="flex-1/3 ">
                         <h2 className="text-2xl font-bold mb-2">What are Hydrocele?  </h2>
                         <p className="text-gray-700">Hydrocele is a common medical condition in men, characterized by fluid accumulation in the scrotum, leading to swelling and discomfort. It can affect men of all ages, from newborns to older people. You're not alone if you or a loved one is facing this issue. Aapkacare is here to provide you with the information you need.</p>
@@ -134,20 +134,20 @@ const Hydrocele = () => {
             </div>
 
             <div className="bg-[#E4F4FD]">
-                <div className="max-w-full mx-auto p-6 bg-[#E4F4FD] flex flex-col md:flex-row items-center">
+                <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center">
                     {/* Left Image Section */}
-                    <div className="w-full md:pl-30 pl-0 md:w-1/2">
-                        <img alt="A female doctor in a white coat holding a clipboard and smiling"height="400"src="https://storage.googleapis.com/a1aa/image/vKxrjoV05YQbK2x7eC8iuVF-iU-cPKH8TYa38LVdtFg.jpg"width="400"/>
+                    <div className="w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
+                        <img alt="A female doctor in a white coat holding a clipboard and smiling"className='w-[300px] md:w-[400px] h-auto' src="https://storage.googleapis.com/a1aa/image/vKxrjoV05YQbK2x7eC8iuVF-iU-cPKH8TYa38LVdtFg.jpg"/>
                     </div>
 
                     {/* Right Content Section */}
-                    <div className="w-full md:w-1/2 mt-6 md:mt-0 md:mr-50 mr-0">
-                        <h1 className="text-2xl font-bold text-gray-800">OUR EXPERTS EXPLAIN</h1>
+                    <div className="w-full md:w-1/2 md:pl-12">
+                        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">OUR EXPERTS EXPLAIN</h1>
 
                         {/* Tabs */}
-                        <div className="flex space-x-4 mt-4">
+                        <div className="flex flex-wrap gap-2 mb-4">
                             {Object.keys(content).map((key) => (
-                            <button key={key} className={`px-6 py-2 rounded-full text-white font-semibold transition-all ${selectedTab === key ? "bg-green-500" : "bg-gray-500"}`}
+                            <button key={key} className={`px-5 py-2 rounded-full text-white font-semibold transition-all duration-300 ${selectedTab === key ? "bg-green-500" : "bg-gray-500"}`}
                             onClick={() => setSelectedTab(key)}>
                                 {key.charAt(0).toUpperCase() + key.slice(1)}
                             </button>
@@ -159,28 +159,36 @@ const Hydrocele = () => {
                     </div>
                 </div>
             </div>
-
-            <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-40 px-5 gap-3">
-                <div>
-                    <h1 class="text-2xl font-bold mb-4">Treatment </h1>
-                    <p class="text-md mb-4">The treatment of Hydrocele varies depending on the severity and discomfort it causes. In some cases, conservative management and observation are sufficient. However, surgical intervention may be necessary in more severe or persistent cases. 
-                    </p>
-                    <h1 className='text-2xl font-bold mb-4'>Diagnosis </h1>
-                    <p className='text-md mb-4'>At Aapka Care, the doctors are well trained in diagnosing the hydrocele with modern equipment and perform a physical examination to detect the root cause. The doctor may check for tenderness in the scrotum while putting slight pressure around the scrotum and lower abdominal region. If the fluid is present, the scrotum will allow light transmission. The doctor may also ask you to cough to check whether you experience pain in the scrotum region. There are a few diagnostic tests the doctor may recommend to find the underlying cause: Blood test - Urine culture</p>
+            <div className="container max-w-full space-y-10">
+            {/* Section 1 */}
+                <div className="bg-white w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2">
+                        <h1 className="text-2xl font-bold mb-4 text-gray-800">Treatment</h1>
+                        <p className="text-md text-gray-700 text-justify">The treatment of Hydrocele varies depending on the severity and discomfort it causes. In some cases, conservative management and observation are sufficient. However, surgical intervention may be necessary in more severe or persistent cases. 
+                        </p>
+                        <h1 className="text-2xl font-bold mb-4 text-gray-800">Diagnosis</h1>
+                        <p className="text-md text-gray-700 text-justify">At Aapka Care, the doctors are well trained in diagnosing the hydrocele with modern equipment and perform a physical examination to detect the root cause. The doctor may check for tenderness in the scrotum while putting slight pressure around the scrotum and lower abdominal region. If the fluid is present, the scrotum will allow light transmission. The doctor may also ask you to cough to check whether you experience pain in the scrotum region. There are a few diagnostic tests the doctor may recommend to find the underlying cause: Blood test - Urine culture
+                        </p>
+                    </div>
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing a cholecystectomy" className="rounded-lg w-full max-w-[400px] p-2 md:p-6" src="/images/circumcision/u-h.png" />
+                    </div>
                 </div>
-                <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[700px] md:p-6 p-2 h-[500px]" src="/images/circumcision/u-h.png"/>
+
+            {/* Section 2 */}
+                <div className="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center px-5 md:px-20 py-8 gap-6">
+                    <div className="w-full md:w-1/2 flex justify-center">
+                        <img alt="Surgeons performing laparoscopic surgery" className="rounded-lg w-full max-w-[500px] p-2 md:p-6" src="/images/circumcision/u-h-1.png" />
+                    </div>
+                    <div className="w-full md:w-1/2">
+                        <h2 className="text-2xl font-bold mb-4 text-gray-800">Procedure</h2>
+                        <p className="text-lg text-gray-700 text-justify">Open hydrocelectomy: This is a surgical procedure that is usually performed under the influence of general anesthesia. During this procedure, the surgeon makes a cut in the scrotum or groin area and drains out the fluid via suction. The surgeon then closes the communication to the canal between the abdominal cavity and the scrotum, before removing the hydrocele sac and closing the incisions with sutures or surgical strips 
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="bg-[#E4F4FD] w-full flex flex-col md:flex-row items-center md:px-40 px-5 gap-3">
-                <div>
-                    <h1 class="text-2xl font-bold mb-4">Procedure </h1>
-                    <p class="text-md mb-4">Open hydrocelectomy: This is a surgical procedure that is usually performed under the influence of general anesthesia. During this procedure, the surgeon makes a cut in the scrotum or groin area and drains out the fluid via suction. The surgeon then closes the communication to the canal between the abdominal cavity and the scrotum, before removing the hydrocele sac and closing the incisions with sutures or surgical strips 
-                    </p>
-                </div>
-                <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2 h-[400px]" src="/images/circumcision/u-h-1.png"/>
-            </div>
-
-            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-white shadow-lg rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-30 px-6 bg-white shadow-lg rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">Benefits of undergoing Hydrocelectomy at Aapka Care in Pune</h2>
                 <p className="text-gray-600 mb-4">Aapka Care strives to provide an efficient, care-filled, and hassle-free surgical experience for every patient. Following are the benefits of choosing our clinics and hospitals for the treatment of your hydrocele:</p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -190,7 +198,7 @@ const Hydrocele = () => {
                 </ul>
             </div>
 
-            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-[#E4F4FD] shadow-lg rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-30 px-6 bg-[#E4F4FD] shadow-lg rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">Lifestyle changes that can help in getting relief from hydroceles </h2>
                 <p className="text-gray-600 mb-4">Aapka Care strives to provide an efficient, care-filled, and hassle-free surgical experience for every patient. Following are the benefits of choosing our clinics and hospitals for the treatment of your hydrocele:</p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -202,7 +210,7 @@ const Hydrocele = () => {
                     <li>Refrain from putting pressure on the groin area</li>
                 </ul>
             </div>
-            <div className="max-w-full mx-auto py-6 md:px-40 px-6 bg-white shadow-lg rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-30 px-6 bg-white shadow-lg rounded-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">What complications can arise if hydrocele is left untreated? </h2>
                 <p className="text-gray-600 mb-4">Severe cases of hydrocele can cause serious complications. Some of the potential complications are listed below: </p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2">

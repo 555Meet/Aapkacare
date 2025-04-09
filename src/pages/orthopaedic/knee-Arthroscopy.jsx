@@ -63,8 +63,8 @@ const KneeArthroscopy = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto py-6 md:px-30 px-5">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
+            <div className="mx-auto py-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Knee Arthroscopy Surgery in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Knee Arthroscopy and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of bariatric-related consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons. 
@@ -89,7 +89,7 @@ const KneeArthroscopy = () => {
                     </div>
                 </section>
             </div>
-            <div className="bg-[#E2F2FD] mx-auto py-6 md:px-30 px-5">
+            <div className="bg-[#E2F2FD] mx-auto py-6">
                 <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
                     <div className="flex-1 flex justify-center mt-4 md:mt-0">
                         <img src="/images/laparoscopy/Gallbladder1-4.png" alt="Cataract illustration" className="w-[525px] h-[325px]"/>
@@ -100,7 +100,7 @@ const KneeArthroscopy = () => {
                     </div>
                 </section>
             </div>
-            <div className="max-w-full mx-auto p-6 bg-white md:px-30 px-0 rounded-lg">
+            <div className="max-w-full mx-auto p-6 bg-white md:px-20 px-0 rounded-lg">
                 <h2 className="text-center text-3xl font-bold mb-6">Understanding the causes of Lipoma</h2>
                 <p className="text-center text-xl mb-6">Lipomas are likely inherited, so if someone in your family has a lipoma, you are more likely to get one yourself. Multiple lipomas can occur on the body as a result of certain conditions. These conditions include: </p>
                 <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-6 text-center">
@@ -114,106 +114,110 @@ const KneeArthroscopy = () => {
                         <ReasonCard {...reasons[9]} />
                     </div>
                 </div>
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
-                    <div className="flex-1 ">
+            </div>    
+            <div className="w-full bg-[#E2F2FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                    <img alt="Kidney surgery" className="rounded-lg w-[500px] p-2 md:p-6 h-[400px]" src="/images/laparoscopy/Gallbladder1-2.png"/>
+                    <div>
                         <h2 className="text-2xl font-bold mb-2">When to Consider Knee Arthroscopy: </h2>
                         <p className="text-gray-700 mb-2">Determining when to undergo knee arthroscopy is a crucial decision. Your healthcare provider will assess your condition and discuss whether this minimally invasive procedure is proper for you. The severity of your knee problems and overall health often influences the timing of the surgery.</p>
                     </div>
-                    <div className="flex-1 flex justify-center">
-                        <img src="/images/laparoscopy/Gallbladder1-2.png" alt="Cataract illustration" className="w-[525px] h-[325px]"/>
-                    </div>
-                </section>
-            </div>
-
-            <div className="bg-[#E2F2FD] mx-auto py-6 md:px-30 px-5">
-                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
-                    <div className="flex-1 ">
-                        <h2 className="text-2xl font-bold mb-2">Aapka Care - Best orthopaedic center for orthopaedic surgery </h2>
-                        <p className="text-gray-700 mb-2">Aapka Care is one of the best surgery care providers in India for orthopaedic surgeries, including knee arthroscopy. We specialize in advanced arthroscopic surgery with help from our panel of expert and experienced orthopaedic surgeons. If you have joint pain or stiffness and have trouble performing your day-to-day activities, you should get in touch with us for US FDA-approved advanced arthroscopic surgery. </p>
-                        <p className="text-gray-700">In addition to advanced treatment, we also provide other auxiliary services to the patient- such as documentation support, insurance assistance, free cab services for pickup and dropoff, complimentary meals, etc.</p>
+                </div>
+            </div>                
+            {/* Section 1 */}
+            <div className="bg-white w-full">
+                <section className="max-w-7xl mx-auto py-6 md:px-10 px-5 flex flex-col md:flex-row items-center">
+                    <div className="flex-1">
+                        <h2 className="text-2xl font-bold mb-2">Aapka Care - Best orthopaedic center for orthopaedic surgery
+                        </h2>
+                        <p className="text-gray-700 mb-2">
+                        Aapka Care is one of the best surgery care providers in India for orthopaedic surgeries, including knee arthroscopy...
+                        </p>
+                        <p className="text-gray-700">
+                        In addition to advanced treatment, we also provide auxiliary services like documentation, insurance, cab, meals, etc.
+                        </p>
                     </div>
                     <div className="flex-1 flex justify-center mt-4 md:mt-0">
-                        <img src="/images/orthopaedic/o-k-4.png" alt="Cataract illustration" className="w-[525px] h-[325px]"/>
+                        <img src="/images/orthopaedic/o-k-4.png" alt="Cataract illustration" className="w-[525px] h-[325px]" />
                     </div>
                 </section>
             </div>
-            <div className='container max-w-full'>
-                    <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2 h-[400px]" src="/images/laparoscopy/Gallbladder1-1.png"/>
-                        <div>
-                        <h1 class="text-2xl font-bold mb-4">Benefits of Kidney Transplant </h1>
-                        <p class="text-md mb-4">A kidney transplant is generally the best treatment for kidney failure in a patient who fits the transplantation procedure. A successful kidney transplant procedure provides several benefits such as: </p>
-                        <ul className='list-disc pl-5 mb-4'>
-                            <li>Increases life expectancy or survival rate </li>
-                            <li>Improves the quality of life </li>
-                            <li>Cost-effective when compared to multiple dialyses </li>
-                            <li>Higher energy levels </li>
-                            <li>Fewer restrictions on what an individual can eat and drink </li>
-                            <li>Helps improve sex life and fertility </li>
-                            <li>Allows to resume daily activities</li>
-                        </ul>
-                        </div>
-                    </div>
 
-                    <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing laparoscopic surgery" class="mb-4 md:mb-0 md:mr-6 rounded-lg w-[500px] md:p-6 p-2" height="300" src="/images/laparoscopy/Gallbladder1-2.png"/>
-                        <div className='md:py-10 py-3'>
-                            <h2 class="text-2xl font-bold mb-4">Risks and complication of Kidney Transplant </h2>
-                            <p class="text-lg">A kidney transplant is a major and complex procedure that can cause problems for some patients. The main risks and complications of kidney transplant include: 
-                            </p>
-                            <ul className='list-disc pl-5 mb-4'>
-                                <li>an allergic reaction to general anaesthesia </li>
-                                <li>Improves the quality of life </li>
-                                <li>bleeding </li>
-                                <li>blood clots </li>
-                                <li>leakage from the ureter </li>
-                                <li>a blockage of the ureter </li>
-                                <li>an infection </li>
-                                <li>rejection of the donated kidney </li>
-                                <li>failure of the donated kidney </li>
-                                <li>a heart attack </li>
-                                <li>a stroke</li>
+            {/* Section 2 - Kidney Benefits */}
+            <div className="w-full bg-[#E2F2FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                    <img alt="Kidney surgery" className="rounded-lg w-[500px] p-2 md:p-6 h-[400px]" src="/images/laparoscopy/Gallbladder1-1.png"/>
+                    <div>
+                        <h1 className="text-2xl font-bold mb-4">Benefits of Kidney Transplant</h1>
+                        <p className="text-md mb-4">A kidney transplant is generally the best treatment for kidney failure...</p>
+                        <ul className="list-disc pl-5 mb-4">
+                            <li>Increases life expectancy</li>
+                            <li>Improves quality of life</li>
+                            <li>Cost-effective vs dialysis</li>
+                            <li>Higher energy levels</li>
+                            <li>Fewer food/drink restrictions</li>
+                            <li>Improved sex life and fertility</li>
+                            <li>Resumption of daily activities</li>
                         </ul>
-                        </div>
                     </div>
-
-                    <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <div className='flex flex-col flex-1/2'>
-                        <h1 class="text-2xl font-bold mb-4">When is consultation with the doctor needed? </h1>
-                        <p class="text-md mb-4">The patient can visit the doctor if he/she is facing any kind of discomfort, such as: 
-                        </p>
-                        <ul className='list-disc pl-5 mb-4'>
-                            <li>Pain in the abdominal area </li>
-                            <li>Inflammation or swelling </li>
-                            <li>Infection in the incision area</li> 
-                            <li>Bleeding </li>
-                        </ul>
-                        </div>
-                        <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2" height="200" src="/images/laparoscopy/Gallbladder1-4.png"/>
-                    </div>
-                    <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing laparoscopic surgery" class="mb-4 md:mb-0 md:mr-6 rounded-lg w-[500px] md:p-6 p-2" height="300" src="/images/laparoscopy/Gallbladder1-2.png"/>
-                        <div className='md:py-10 py-3'>
-                            <h2 class="text-2xl font-bold mb-4">Risks of delayed Kidney Transplant </h2>
-                            <p class="text-lg">If a patient suffering from an end-stage renal disease delays a kidney transplant, it can cause life-threatening complications. The common risks of delayed kidney transplant are: 
-                            </p>
-                            <ul className='list-disc pl-5 mb-4'>
-                                <li>Anaemia </li>
-                                <li>Bone weakness </li>
-                                <li>Fluid retention </li>
-                                <li>Heart disease </li>
-                                <li>Hyperkalemia </li>
-                                <li>Urinary tract obstruction </li>
-                                <li>Blood toxicity </li>
-                                <li>Uncontrolled systemic disease (heart or liver disease) </li>
-                                <li>Multiple organ failure </li>
-                                <li>Death</li>
-                            </ul>
-                        </div>
-                    </div>
+                </div>
             </div>
-            <ReactUs/>
-            <LastImages/>
+
+            {/* Section 3 - Risks of Kidney Transplant */}
+            <div className="bg-white w-full">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                    <img alt="Laparoscopic surgery" className="rounded-lg w-[500px] md:p-6 p-2 mb-4 md:mb-0" src="/images/laparoscopy/Gallbladder1-2.png"/>
+                <div>
+                    <h2 className="text-2xl font-bold mb-4">Risks and Complications of Kidney Transplant</h2>
+                    <p className="text-lg">A kidney transplant is complex and may involve:</p>
+                    <ul className="list-disc pl-5 mb-4">
+                        <li>Allergic reaction to anesthesia</li>
+                        <li>Bleeding, blood clots</li>
+                        <li>Ureter blockage/leakage</li>
+                        <li>Infection, rejection, or failure</li>
+                        <li>Heart attack or stroke</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        {/* Section 4 - Consultation Needed */}
+        <div className="w-full bg-[#E2F2FD]">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                <div className="flex-1">
+                    <h1 className="text-2xl font-bold mb-4">When is consultation with the doctor needed?</h1>
+                    <p className="text-md mb-4">Visit your doctor if you experience:</p>
+                    <ul className="list-disc pl-5 mb-4">
+                        <li>Abdominal pain</li>
+                        <li>Swelling or inflammation</li>
+                        <li>Infection at incision</li>
+                        <li>Bleeding</li>
+                    </ul>
+                </div>
+                <img alt="Consultation needed" className="rounded-lg w-[500px] md:p-6 p-2" src="/images/laparoscopy/Gallbladder1-4.png"/>
+            </div>
+        </div>
+
+        {/* Section 5 - Risks of Delayed Transplant */}
+        <div className="bg-white w-full">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:px-10 px-5 gap-6 py-6">
+                <img alt="Laparoscopic surgery" className="rounded-lg w-[500px] md:p-6 p-2 mb-4 md:mb-0" src="/images/laparoscopy/Gallbladder1-2.png"/>
+                <div>
+                    <h2 className="text-2xl font-bold mb-4">Risks of Delayed Kidney Transplant</h2>
+                    <p className="text-lg">Delaying a transplant may cause:</p>
+                    <ul className="list-disc pl-5 mb-4">
+                        <li>Anaemia, bone weakness</li>
+                        <li>Fluid retention</li>
+                        <li>Heart disease, hyperkalemia</li>
+                        <li>Blood toxicity</li>
+                        <li>Systemic organ failure</li>
+                        <li>Death</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ReactUs/>
+        <LastImages/>
         </>
     );
 }

@@ -80,25 +80,29 @@ const Fissure = () => {
     return (
         <div>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" py-6 rounded-lg flex flex-col md:flex-row md:mx-20 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
-                        <h1 className="text-3xl font-bold">Affordable Piles Treatment in Pune </h1>
-                        <p className="text-gray-600 mt-2">Want to go through Piles surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons </p>
+                        <h1 className="text-3xl font-bold">Affordable fissure Treatment in Pune </h1>
+                        <p className="text-gray-600 mt-2">Want to go through fissure surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons </p>
                         <Check/>
                     </div>
                     <div className="flex flex-wrap justify-center gap-4 text-blue-600 mt-4 md:mt-0">
                         <BestSurgary/>
                     </div>
                 </section>
-
-                <section className="py-6 rounded-lg flex flex-col md:flex-row items-center md:px-25 px-5">
+      
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
                     <div className="flex-1 ">
-                        <h2 className="text-2xl font-bold mb-2">What are Piles? </h2>
-                        <p className="text-gray-700">Piles, medically known as hemorrhoids, are a common condition that affects millions of people worldwide. These swollen blood vessels in the rectum or anus can be a source of discomfort, but they are manageable and treatable. In this comprehensive guide, we'll explore piles, including signs and symptoms, surgical and non-surgical treatment options, the importance of seeking expert doctors, and the role of Aapkacare. We'll also discuss prevention strategies and when to seek treatment.</p>
+                        <h2 className="text-2xl font-bold mb-2">What are fissure? </h2>
+                        <p className="text-gray-700">fissure, medically known as hemorrhoids, are a common condition that affects millions of people worldwide. These swollen blood vessels in the rectum or anus can be a source of discomfort, but they are manageable and treatable. In this comprehensive guide, we'll explore fissure, including signs and symptoms, surgical and non-surgical treatment options, the importance of seeking expert doctors, and the role of Aapkacare. We'll also discuss prevention strategies and when to seek treatment.</p>
                     </div>
-                    <div className=" flex justify-center mt-4 md:mt-0">
-                        <img src="/images/proctology/p-f-main.png"alt="Cataract illustration"className="w-[425px] h-[325px]"/>
+                    <div className="flex-1 flex justify-center mt-4 md:mt-0">
+                        <img
+                            src="/images/proctology/p-f-main.png"
+                            alt="Cataract illustration"
+                            className="w-[625px] h-[325px]"
+                        />
                     </div>
                 </section>
             </div>
@@ -124,15 +128,23 @@ const Fissure = () => {
                     ))}
                 </div>
             </div>
-            <div className='container max-w-full'>
-                <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row md:px-30 px-5 gap-10">
-                    <div className='flex flex-col justify-center'>
-                        <h1 class="text-3xl font-bold mb-4">When to Seek Treatment</h1>
-                        <p className='mb-4'>If you're experiencing any of the signs mentioned above, seeking treatment promptly is crucial. Delaying treatment can lead to the fissure becoming chronic, which is harder to manage. At Aapkacare, we offer comprehensive care for cracks, ensuring comfort and well-being throughout treatment.</p>
+            <div className="w-full bg-[#E2F2FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:px-10 px-5 py-6">
+                    <div className="flex flex-col justify-center flex-1">
+                        <h1 className="text-3xl font-bold mb-4">When to Seek Treatment</h1>
+                        <p className="mb-4">If you're experiencing any of the signs mentioned above, seeking treatment promptly is crucial. Delaying treatment can lead to the fissure becoming chronic, which is harder to manage. At Aapkacare, we offer comprehensive care for cracks, ensuring comfort and well-being throughout treatment.
+                        </p>
                     </div>
-                    <img alt="Surgeons" class="md:py-5 py-2 rounded-lg w-[400px] h-[350px] md:pt-12 pt-5" src="/images/docter.png"/>
+                    <div className="flex justify-center flex-1">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-[400px] h-[350px] object-cover"
+                            src="/images/docter.png"
+                        />
+                    </div>
                 </div>
             </div>
+
             <div className='container mx-auto flex flex-col md:flex-row items-center md:items-start'>
                 <div className='flex flex-1/2 rounded-lg p-4'>
                     <FAQproctology/>

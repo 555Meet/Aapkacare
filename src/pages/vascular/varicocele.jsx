@@ -63,8 +63,8 @@ const Varicocele = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" py-6 rounded-lg flex flex-col md:flex-row md:mx-20 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
                         <h1 className="text-3xl font-bold">Affordable Varicocele Treatment in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Varicocele surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons for all your healthcare needs.</p>
@@ -74,16 +74,18 @@ const Varicocele = () => {
                         <BestSurgary/>
                     </div>
                 </section>
-            </div>
-
-            <div className="mx-auto">
-                <section className="py-6 rounded-lg flex flex-col md:flex-row items-center md:px-25 px-5 bg-white">
+      
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center">
                     <div className="flex-1 ">
                         <h2 className="text-2xl font-bold mb-2">What is Varicocele? </h2>
                         <p className="text-gray-700">Varicocele is characterized by the enlargement of veins within the scrotum, similar to varicose veins in the legs. While many varicoceles do not cause any symptoms, they can be associated with male infertility and discomfort. Effective treatment options are available to manage this condition, with surgeries performed by skilled doctors at Aapkacare.</p>
                     </div>
-                    <div className=" flex justify-center mt-4 md:mt-0">
-                        <img src="/images/vascular/v-main.png"alt="Cataract illustration"className="w-[425px] h-[325px]"/>
+                    <div className="flex-1 flex justify-center mt-4 md:mt-0">
+                        <img
+                            src="/images/vascular/v-main.png"
+                            alt="Cataract illustration"
+                            className="w-[625px] h-[325px]"
+                        />
                     </div>
                 </section>
             </div>
@@ -141,23 +143,32 @@ const Varicocele = () => {
                 </div>
             </div>
 
-            <div className="container max-w-full">
-                <div class="bg-[#E2F2FD] w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <img alt="Surgeons performing laparoscopic surgery" class="rounded-lg w-[450px] h-[500px] py-5" src="/images/docter.png"/>
-                        <div className=''>
-                            <h2 class="text-2xl font-bold mb-4">Expert Doctors </h2>
-                            <p class="text-lg">At Aapkacare, we have a network of highly skilled doctors who specialize in treating varicocele. Our doctors are dedicated to providing personalized care tailored to your specific needs. They will work with you to determine the most appropriate treatment plan, which may include varicocele surgeries. 
-                            </p>
-                            <h2 class="text-2xl font-bold mb-4">Contact Us Today </h2>
-                            <p class="text-lg">If you're experiencing discomfort, pain, or infertility due to varicocele, don't hesitate to seek treatment. Contact Aapkacare to connect with a knowledgeable doctor who can provide you with the right varicocele treatment plan, including varicocele surgeries. Your health and well-being are our top priorities. 
-                            </p>
-                            <p class="text-lg">Please schedule an appointment today with our expert doctors and take the first step toward a more comfortable and healthier future.
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="bg-white w-full flex flex-col md:flex-row items-center md:px-30 px-5 gap-3">
-                        <div className='flex flex-col flex-1/2'>
+            <div className="w-full bg-[#E4F4FD]">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:px-10 px-5 py-6">
+                    <div className="flex justify-center flex-1">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-[400px] h-[350px] object-cover"
+                            src="/images/proctology/p-2f-2.png"
+                        />
+                    </div>
+                    <div className="flex flex-col justify-center flex-1">
+                        <h2 class="text-2xl font-bold mb-4">Expert Doctors </h2>
+                        <p class="text-lg">At Aapkacare, we have a network of highly skilled doctors who specialize in treating varicocele. Our doctors are dedicated to providing personalized care tailored to your specific needs. They will work with you to determine the most appropriate treatment plan, which may include varicocele surgeries. 
+                        </p>
+                        <h2 class="text-2xl font-bold mb-4">Contact Us Today </h2>
+                        <p class="text-lg">If you're experiencing discomfort, pain, or infertility due to varicocele, don't hesitate to seek treatment. Contact Aapkacare to connect with a knowledgeable doctor who can provide you with the right varicocele treatment plan, including varicocele surgeries. Your health and well-being are our top priorities. 
+                        </p>
+                        <p class="text-lg">Please schedule an appointment today with our expert doctors and take the first step toward a more comfortable and healthier future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="w-full bg-white">
+                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10 md:px-10 px-5 py-6">
+                    <div className="flex flex-col justify-center flex-1">
                         <h1 class="text-2xl font-bold mb-4">When is consultation with the doctor needed? </h1>
                         <p class="text-md mb-4">The patient can visit the doctor if he/she is facing any kind of discomfort, such as: 
                         </p>
@@ -168,20 +179,29 @@ const Varicocele = () => {
                             <li>Bleeding </li>
                         </ul>
                     </div>
-                    <img alt="Surgeons performing a cholecystectomy" class="rounded-lg w-[500px] md:p-6 p-2" height="200" src="/images/laparoscopy/Gallbladder1-4.png"/>
+                    <div className="flex justify-center flex-1">
+                        <img
+                            alt="Surgeons"
+                            className="rounded-lg w-[400px] h-[350px] object-cover"
+                            src="/images/laparoscopy/Gallbladder1-4.png"
+                        />
+                    </div>
                 </div>
             </div>
 
-            <div className='bg-[#E2F2FD] mx-auto flex flex-col md:flex-row items-center md:items-start'>
-                <div className='flex flex-1/2 rounded-lg p-4 flex-col'>
+            <div className="mx-auto p-6 max-w-full bg-[#E4F4FD]">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-15 max-w-7xl">
+                    <div className=" flex-1 w-full md:w-1/2 ">
                     <h2 className="text-3xl font-bold mb-4 md:ml-20 ml-5">Surgeries for Varicocele Treatment </h2>
                     <p className="mb-2 md:ml-20 ml-5">At Aapkacare, our experienced doctors offer surgical solutions to treat varicoceles. The primary surgical options for varicocele treatment include: </p>
                     <FAQvascular/>
-                </div>
-                <div className='w-full md:w-1/3 mt-0 md:ml-4'>
-                    <img src="/images/vascular/v-v-2.png" alt="photo" className='h-[325px] w-[500px] rounded'/>
-                </div>
-            </div>
+                    </div>
+                    <div className="flex flex-wrap justify-center gap-4 text-blue-600 mt-4 md:mt-0">
+                        <img src="/images/vascular/v-v-2.png" alt="photo" className='h-[325px] w-[500px] rounded'/>
+                    </div>
+                </section>
+            </div>    
+
             <div className="h-5 bg-white"></div>
             <ReactUs/>
             <LastImages/>

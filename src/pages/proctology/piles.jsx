@@ -95,10 +95,10 @@ const Piles = () => {
     return (
         <>
             <MainTop/>
-            <div className="mx-auto p-6">
-                <section className=" py-6 rounded-lg flex flex-col md:flex-row md:mx-20 mx-0">
+            <div className="mx-auto p-6 max-w-7xl">
+                <section className=" p-6 rounded-lg flex flex-col md:flex-row items-center gap-5">
                     <div className=" flex-1 w-full md:w-1/2 ">
-                        <h1 className="text-3xl font-bold">Affordable Piles Treatment in Pune </h1>
+                    <h1 className="text-3xl font-bold">Affordable Piles Treatment in Pune </h1>
                         <p className="text-gray-600 mt-2">Want to go through Piles surgery and have a healthy life at an affordable price with the best doctors in Pune? Get all kinds of Varicocele consultations for your surgery. Here at Aapkacare Health, we will provide the best surgeons </p>
                         <Check/>
                     </div>
@@ -109,7 +109,7 @@ const Piles = () => {
             </div>
 
             <div className="mx-auto">
-                <section className="py-6 rounded-lg flex flex-col md:flex-row items-center md:px-25 px-5 bg-[#E2F2FD]">
+                <section className="py-6 rounded-lg flex flex-col md:flex-row items-center md:px-25 px-5 bg-white">
                     <div className="flex-1 ">
                         <h2 className="text-2xl font-bold mb-2">What are Piles? </h2>
                         <p className="text-gray-700">Piles, medically known as hemorrhoids, are a common condition that affects millions of people worldwide. These swollen blood vessels in the rectum or anus can be a source of discomfort, but they are manageable and treatable. In this comprehensive guide, we'll explore piles, including signs and symptoms, surgical and non-surgical treatment options, the importance of seeking expert doctors, and the role of Aapkacare. We'll also discuss prevention strategies and when to seek treatment.</p>
@@ -131,11 +131,22 @@ const Piles = () => {
                 </div>
             </div>
 
-            <div className='container mx-auto flex flex-col md:flex-row items-center md:items-start'>
-                <div className='flex flex-1/2 rounded-lg p-4'>
-                    <div className="w-full max-w-3xl md:mx-14 mx-auto p-4">
+            <div className="bg-white w-full">
+                <section className="max-w-7xl mx-auto py-6 md:px-10 px-5 flex flex-col md:flex-row items-center">
+                    <div className="flex-1">
                     <h1 className="font-bold text-3xl mb-4">When to Get Treatment</h1>
                     <p className="text-xl mb-4">it`s essential to seek treatment when you experience persistent or servere symptoms. Timely intervention can prevent the condition from worsening. Don`t hesitable to consult a healthcare proffestional or proctologist when you notice rectal bleeding, persistent pain, or significant discomfort.</p>
+                    </div>
+                    <div className="flex-1 flex justify-center mt-4 md:mt-0">
+                        <img src="/images/proctology/p-p-1.png" alt="Cataract illustration" className="w-[525px] h-[325px]" />
+                    </div>
+                </section>
+            </div>
+
+
+            <div className='container mx-auto bg-[#E2F2FD] flex flex-col md:flex-row items-center md:items-start'>
+                <div className='flex flex-1/2 rounded-lg p-4'>
+                    <div className="w-full max-w-3xl md:mx-14 mx-auto p-4">
                         {faqs.map((faq, index) => (
                             <div key={index} className="border border-gray-300 rounded-lg mb-2">
                                 <button
@@ -162,12 +173,9 @@ const Piles = () => {
                         ))}
                     </div>
                 </div>
-                <div className='w-full md:w-1/3 mt-0 md:mt-8 md:ml-4'>
-                    <img src="/images/proctology/p-p-1.png" alt="photo" className='h-[325px] w-[500px] rounded'/>
-                </div>
             </div>   
 
-            <div className="max-w-full mx-auto py-6 md:px-30 px-5 bg-[#E2F2FD] rounded-lg">
+            <div className="max-w-full mx-auto py-6 md:px-30 px-5 bg-white rounded-lg">
                 <h1 className="text-center text-3xl font-bold mb-6">Understand the Causes of Piles </h1>
                 <p className="text-center text-xl mb-6 ">There is a wide range of factors that cause piles, both internal and external. Here are some of them. The most common causes of piles include 
                 </p>

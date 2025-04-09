@@ -80,53 +80,53 @@ const Appendicitis = () => {
                     ))}
                 </div>
             </div>
+            <div className="bg-white text-gray-800 font-sans">
+  <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="flex flex-col lg:flex-row">
+      
+      {/* Left Content Section */}
+      <div className="lg:w-2/3">
+        <h1 className="text-3xl font-bold mb-6">Symptoms of Appendicitis</h1>
+        <ul className="list-disc pl-6 space-y-3 mb-6">
+          <li>
+            <strong>Abdominal pain:</strong> Typically starts around the belly button and then moves to the lower right side of the abdomen. The pain often becomes sharp and severe.
+          </li>
+          <li>
+            <strong>Loss of appetite.</strong>
+          </li>
+          <li>
+            <strong>Nausea and vomiting.</strong>
+          </li>
+          <li>
+            <strong>Fever and an elevated white blood cell count are signs of infection.</strong>
+          </li>
+          <li>
+            <strong>Difficulty passing gas or having a bowel movement.</strong>
+          </li>
+          <li>
+            <strong>Imaging Tests:</strong> Various imaging studies can help confirm the presence of gallstones and assess the severity of the condition. Standard imaging tests are: Ultrasound, CT Scan, MRI, HIDA Scan.
+          </li>
+        </ul>
+        <p className="mb-4">
+          Appendicitis is considered a medical emergency, and if you suspect you or someone you know has appendicitis, it’s essential to seek immediate medical attention. Treatment typically involves surgical removal of the inflamed appendix—an appendectomy procedure. This surgery is usually done laparoscopically or through a small incision in the abdomen.
+        </p>
+        <p>
+          Prompt treatment is crucial because if the appendix ruptures, it can lead to a potentially life-threatening condition called peritonitis, where the infection spreads throughout the abdominal cavity. Therefore, if you suspect appendicitis, contact a healthcare professional immediately.
+        </p>
+      </div>
 
-            <div class="bg-white text-gray-800 font-sans">
-                <div class="container max-w-6xl mx-auto p-4">
-                    <div class="flex flex-col lg:flex-row">
-                        <div class="lg:w-2/3">
-                            <h1 class="text-3xl font-bold mb-4">Symptoms of appendicitis</h1>
-                            <ul class="list-disc pl-5 mb-4">
-                                <li class="mb-2">
-                                    <strong>Abdominal pain:</strong>
-                                    Typically starts around the belly button and then moves to the lower right side of the abdomen. The pain often becomes sharp and severe.
-                                </li>
-                                <li class="mb-2">
-                                    <strong>Loss of appetite.</strong>
-                                </li>
-                                <li class="mb-2">
-                                    <strong>Nausea and vomiting.</strong>
-                                </li>
-                                <li class="mb-2">
-                                    <strong>Fever and an elevated white blood cell count are signs of infection.</strong>
-                                </li>
-                                <li class="mb-2">
-                                    <strong>Difficulty passing gas or having a bowel movement.</strong>
-                                </li>
-                                <li class="mb-2">
-                                    <strong>Imaging Tests:</strong>
-                                    Various imaging studies can help confirm the presence of gallstones and assess the severity of the condition. Standard imaging tests are: Ultra Sound, CT Scan, MRI, HIDA Scan
-                                </li>
-                            </ul>
-                            <p class="mb-4">
-                            Appendicitis is considered a medical emergency, and if you suspect you or someone you know has appendicitis, it’s essential to seek immediate medical attention. Treatment typically involves surgical removal of the inflamed appendix, an appendectomy procedure. This surgery is usually done laparoscopically or through a small incision in the abdomen.
-                            </p>
-                            <p>
-                            Prompt treatment is crucial because if the appendix ruptures, it can lead to a potentially life-threatening condition called peritonitis, where the infection spreads throughout the abdominal cavity. Therefore, if you suspect appendicitis, contact a healthcare professional immediately.
-                            </p>
-                        </div>
-                        <div class="lg:w-1/3 lg:pl-8 mt-8 lg:mt-0">
-                            <img 
-                                alt="Medical professionals performing surgery in an operating room"
-                                class="rounded-lg shadow-lg" 
-                                height="300" 
-                                src="https://storage.googleapis.com/a1aa/image/KOgzkyHXQ8IJgxCvSA2qDgk5CT0S1k45VxGiA2Z7uOU.jpg" 
-                                width="400"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
+      {/* Right Image Section */}
+      <div className="lg:w-1/3 lg:pl-8 mt-8 lg:mt-0 flex justify-center lg:justify-start">
+        <img
+          alt="Medical professionals performing surgery in an operating room"
+          className="rounded-lg shadow-lg w-full max-w-[400px] h-auto"
+          src="https://storage.googleapis.com/a1aa/image/KOgzkyHXQ8IJgxCvSA2qDgk5CT0S1k45VxGiA2Z7uOU.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
             <LastImages/>
         </>
     );

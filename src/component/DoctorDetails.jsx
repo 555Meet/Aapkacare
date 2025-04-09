@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { format, addDays } from "date-fns";
 import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 const DoctorDetails = () => {
   const [activeTab, setActiveTab] = useState("Overview");
@@ -145,9 +147,11 @@ const DoctorDetails = () => {
           <p className="text-gray-500 mt-2 text-sm sm:text-base">
             {selectedDate === format(new Date(), "dd") ? "No slots available for today." : "Slots available."}
           </p>
-          <button className="mt-4 bg-blue-700 text-white w-full py-2 rounded-lg">
-            REQUEST APPOINTMENT
-          </button>
+          <Link to={`/appointment?doctor=${encodeURIComponent(doctor.name)}&date=${selectedDate}`}>
+            <button className="mt-4 bg-blue-700 text-white w-full py-2 rounded-lg">
+              REQUEST APPOINTMENT
+            </button>
+          </Link>
         </div>
 
         {/* FAQ Section */}
